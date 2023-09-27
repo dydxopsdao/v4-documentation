@@ -1,5 +1,14 @@
 # Public Testnet Resources
 
+**MAINNET**
+
+**v4 Mainnet Documentation:**\
+[https://v4-mainnet-docs.vercel.app/](https://v4-mainnet-docs.vercel.app/)
+
+---
+
+**TESTNET**
+
 **Public Testnet Front-end:**\
 [https://v4.testnet.dydx.exchange](https://t.co/BZ57SvuXNv)
 
