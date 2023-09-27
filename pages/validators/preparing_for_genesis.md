@@ -44,7 +44,7 @@ To initiate the migration of your self-delegation `DYDX` amount from Ethereum
 3. input the briding `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX`, and `accAddress` in the hexidecimal form acquired above
 4. click `Write` and signing the transaction
 
-You can use the `bridge_events.go` script to validate that your bridging transaction
+You can use the `bridge_events.go` script to validate your bridging transaction
 ```bash
 go run scripts/bridge_events/bridge_events.go \
   -denom <token_denom> \
