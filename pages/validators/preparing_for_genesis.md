@@ -16,7 +16,42 @@ These are necessary steps to register your validator in the genesis and prepare 
 
 ## Timeline
 
-See the [Mainnet Launch Schedule](https://v4-mainnet-docs.vercel.app/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to submit your gentx by the deadline highlighted in the schedule.
+See the [Mainnet Launch Schedule](https://v4-mainnet-docs.vercel.app/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to prepare your `DYDX` tokens for self-delegation, and submit your gentx by the deadlines highlighted in the schedule.
+
+## Preparing `DYDX` for self-delegation
+
+To participate in the potential Genesis process, there is a requirement for genesis Validators to self-delegate `DYDX` tokens, which necessitates locking `DYDX` on Ethereum ([link 1](https://www.dydx.foundation/blog/exploring-the-future-of-dydx), [link 2](https://www.dydx.foundation/blog/update-on-exploring-the-future-of-dydx), [link 3](https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview)).
+dYdX Operations subDAO suggest a minimum of `1000 DYDX`, although the amount required to self-delegate is flexible and is validators' choice.
+
+To approve the `wethDYDX` Smart Contract to transfer the bridging amount of `DYDX` on your behalf
+1. navigate to [`approve` function](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#writeContract#F2) of the `DYDX` Token on Etherscan
+2. click `Connect to Web3`
+4. input [`wethDYDX` Smart Contract Address](https://etherscan.io/address/TODO) and desired amount, e.g. `1000000000000000000000` for bridging `1000 DYDX` tokens - [`DYDX` Token decimals](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#readContract#F24) is `18`
+5. click `Write` and signing the transaction
+
+Make sure you have access to your `accAddress` for dYdX Chain - you will need to provide it to the `wethDYDX` Ethereum contract (this is your `delegator_address` in `genesis.json`, for more on Cosmos Addresses, you can check [this link](https://twitter.com/JoeAbbey/status/1633474883815456769)).
+
+Transform your `accAddress` to hexidecimal bytes
+```bash
+git clone https://github.com/dydxprotocol/v4-chain.git
+cd v4-chain/protocol
+go run scripts/bech32_to_hex/bech32_to_hex.go -address <bech32_address>
+```
+
+To initiate the migration of your self-delegation `DYDX` amount from Ethereum
+1. navigate to the [`bridge` function](https://etherscan.io/address/TODO) of `wethDYDX` on Etherscan
+2. click `Connect to Web3`
+3. input the briding `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX`, and `accAddress` in the hexidecimal form acquired above
+4. click `Write` and signing the transaction
+
+You can use the `bridge_events.go` script to validate that your bridging transaction
+```bash
+go run scripts/bridge_events/bridge_events.go \
+  -denom <token_denom> \
+  -rpc <rpc_node_url> \
+  -address <bridge_contract_address> \
+  -toblock <last_block_inclusive>
+```
 
 ## Get the `dydxprotocold` binary
 
