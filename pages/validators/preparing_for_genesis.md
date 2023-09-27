@@ -41,7 +41,7 @@ go run scripts/bech32_to_hex/bech32_to_hex.go -address <bech32_address>
 To initiate the migration of your self-delegation `DYDX` amount from Ethereum
 1. navigate to the [`bridge` function](https://etherscan.io/address/TODO) of `wethDYDX` on Etherscan
 2. click `Connect to Web3`
-3. input the bridging `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX`, and `accAddress` in its hexidecimal form acquired above
+3. input the bridging `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX`, and `accAddress` in its hexidecimal form acquired above. You can input `0x` for `memo`.
 4. click `Write` and sign the transaction
 
 You can use the `bridge_events.go` script to validate your bridging transaction has been recorded successfully
