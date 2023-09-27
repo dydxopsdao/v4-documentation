@@ -26,8 +26,8 @@ dYdX Operations subDAO suggest a minimum of `1000 DYDX`, although the amount req
 To approve the `wethDYDX` Smart Contract to transfer the bridging amount of `DYDX` on your behalf
 1. navigate to [`approve` function](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#writeContract#F2) of the `DYDX` Token on Etherscan
 2. click `Connect to Web3`
-4. input [`wethDYDX` Smart Contract Address](https://etherscan.io/address/TODO) and desired amount, e.g. `1000000000000000000000` for bridging `1000 DYDX` tokens - [`DYDX` Token decimals](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#readContract#F24) is `18`
-5. click `Write` and signing the transaction
+4. input [`wethDYDX` Smart Contract Address](https://etherscan.io/address/TODO) and desired amount, e.g. `1000000000000000000000` for bridging `1000 DYDX` tokens ([`DYDX` Token decimals](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#readContract#F24) is `18`)
+5. click `Write` and sign the transaction
 
 Make sure you have access to your `accAddress` for dYdX Chain - you will need to provide it to the `wethDYDX` Ethereum contract (this is your `delegator_address` in `genesis.json`, for more on Cosmos Addresses, you can check [this link](https://twitter.com/JoeAbbey/status/1633474883815456769)).
 
@@ -42,9 +42,9 @@ To initiate the migration of your self-delegation `DYDX` amount from Ethereum
 1. navigate to the [`bridge` function](https://etherscan.io/address/TODO) of `wethDYDX` on Etherscan
 2. click `Connect to Web3`
 3. input the briding `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX`, and `accAddress` in the hexidecimal form acquired above
-4. click `Write` and signing the transaction
+4. click `Write` and sign the transaction
 
-You can use the `bridge_events.go` script to validate your bridging transaction
+You can use the `bridge_events.go` script to validate your bridging transaction has been recorded successfully
 ```bash
 go run scripts/bridge_events/bridge_events.go \
   -denom <token_denom> \
@@ -52,6 +52,8 @@ go run scripts/bridge_events/bridge_events.go \
   -address <bridge_contract_address> \
   -toblock <last_block_inclusive>
 ```
+
+In case you would like to experiment with bridging on Sepolia first, you can use [testTOKEN](https://sepolia.etherscan.io/token/0x6D5Bb505A4f85C10B122cCC36E30F57E2B86A291) and [wrappedTestToken](https://sepolia.etherscan.io/address/0xcca9D5f0a3c58b6f02BD0985fC7F9420EA24C1f0)
 
 ## Get the `dydxprotocold` binary
 
