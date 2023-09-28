@@ -16,7 +16,7 @@ These are necessary steps to register your validator in the genesis and prepare 
 
 ## Timeline
 
-See the [Mainnet Launch Schedule](https://v4-mainnet-docs.vercel.app/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to prepare your `DYDX` tokens for self-delegation, and submit your gentx by the deadlines highlighted in the schedule.
+See the [Mainnet Launch Schedule](https://dydx-v4-docs.vercel.app/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to prepare your `DYDX` tokens for self-delegation, and submit your gentx by the deadlines highlighted in the schedule.
 
 ## Preparing `DYDX` for self-delegation
 
