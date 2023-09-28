@@ -1,4 +1,7 @@
 {
   "official_links": "Official links",
-  "terms_of_use_and_privacy_policy": "Terms of Use and Privacy Policy"
+  "terms_of_use_and_privacy_policy": "Terms of Use and Privacy Policy",
+  "rate_limits": "Rate Limits",
+  "other_limits": "Other Limits",
+  "short_term_vs_stateful": "Short-term vs Stateful"
 }
