@@ -20,13 +20,12 @@ See the [Mainnet Launch Schedule](https://v4-mainnet-docs.vercel.app/mainnet/sch
 
 ## Preparing `DYDX` for self-delegation
 
-To participate in the potential Genesis process, there is a requirement for genesis Validators to self-delegate `DYDX` tokens, which necessitates locking `DYDX` on Ethereum ([link 1](https://www.dydx.foundation/blog/exploring-the-future-of-dydx), [link 2](https://www.dydx.foundation/blog/update-on-exploring-the-future-of-dydx), [link 3](https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview)).
-dYdX Operations subDAO suggest a minimum of `1000 DYDX`, although the amount required to self-delegate is flexible and is validators' choice.
+To participate in the potential Genesis process, there is a requirement for genesis Validators to self-delegate `DYDX` tokens, which necessitates locking `DYDX` on Ethereum ([link 1](https://www.dydx.foundation/blog/exploring-the-future-of-dydx), [link 2](https://www.dydx.foundation/blog/update-on-exploring-the-future-of-dydx), [link 3](https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview), [Community Proposal](https://dydx.community/dashboard/proposal/15)).
 
 To approve the `wethDYDX` Smart Contract to transfer the bridging amount of `DYDX` on your behalf
 1. navigate to [`approve` function](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#writeContract#F2) of the `DYDX` Token on Etherscan
 2. click `Connect to Web3`
-4. input [`wethDYDX` Smart Contract Address](https://etherscan.io/address/TODO) and desired amount, e.g. `1000000000000000000000` for bridging `1000 DYDX` tokens ([`DYDX` Token decimals](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#readContract#F24) is `18`)
+4. input [`wethDYDX` Smart Contract Address](https://etherscan.io/address/0x46b2deae6eff3011008ea27ea36b7c27255ddfa9) and desired amount, e.g. `1000000000000000000000` for bridging `1000 DYDX` tokens ([`DYDX` Token decimals](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#readContract#F24) is `18`)
 5. click `Write` and sign the transaction
 
 Make sure you have access to your `accAddress` for dYdX Chain - you will need to provide it to the `wethDYDX` Ethereum contract (this is your `delegator_address` in `genesis.json`, for more on Cosmos Addresses, you can check [this link](https://twitter.com/JoeAbbey/status/1633474883815456769)).
@@ -39,7 +38,7 @@ go run scripts/bech32_to_hex/bech32_to_hex.go -address <bech32_address>
 ```
 
 To initiate the migration of your self-delegation `DYDX` amount from Ethereum
-1. navigate to the [`bridge` function](https://etherscan.io/address/TODO) of `wethDYDX` on Etherscan
+1. navigate to the [`bridge` function](https://etherscan.io/address/0x46b2deae6eff3011008ea27ea36b7c27255ddfa9#writeContract#F2) of `wethDYDX` on Etherscan
 2. click `Connect to Web3`
 3. input the bridging `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX`, and `accAddress` in its hexidecimal form acquired above. You can input `0x` for `memo`.
 4. click `Write` and sign the transaction
@@ -107,7 +106,7 @@ dydxprotocold init --chain-id=$CHAIN_ID --home=$HOME_MAINNET_1 $DYDX_MONIKER
 
 ## Saving/Recovering Consensus Keys
 
-Be sure to **make a copy** of the key pair json `priv_validator_key.json` and `node_key.json` under `$HOME_MAINNET_1/config`, as these key pairs are generated during `dydxprotocold init ....` and **cannot** be recovered later unless they were explicitly derived through the mnenomics.
+Be sure to **make a copy** of the key pair json `priv_validator_key.json` and `node_key.json` under `$HOME_MAINNET_1/config`, as these key pairs are generated during `dydxprotocold init ....` and **cannot** be recovered later unless they were explicitly derived through the mnemonics.
 
 If you've previously created a `gentx` and are recovering your home directory, you will need to replace the default `priv_validator_key.json` and `node_key.json` files with the files backed up from above.
 
