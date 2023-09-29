@@ -1,7 +1,7 @@
 # Mainnet Resources
 
 **v4 Mainnet Documentation:**\
-[https://v4-mainnet-docs.vercel.app/](https://v4-mainnet-docs.vercel.app/)
+[https://dydx-v4-docs.vercel.app/](https://dydx-v4-docs.vercel.app/)
 
 ---
 

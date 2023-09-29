@@ -13,14 +13,14 @@ We recommend validators to use `cosmovisor` to run their nodes. This will make l
 
 ### Installation instructions
 
-See [here](https://v4-mainnet-docs.vercel.app/validators/cosmovisor)  for installation instructions.
+See [here](https://dydx-v4-docs.vercel.app/validators/cosmovisor)  for installation instructions.
 
 ---
 
 ## Upgrades
 
 
-Releases for the dYdX chain will use [semantic versioning](https://semver.org/). See [here](https://v4-mainnet-docs.vercel.app/validators/types_of_upgrades) for details.
+Releases for the dYdX chain will use [semantic versioning](https://semver.org/). See [here](https://dydx-v4-docs.vercel.app/validators/types_of_upgrades) for details.
 
 
 ### ⚒️ Cosmovisor Users
