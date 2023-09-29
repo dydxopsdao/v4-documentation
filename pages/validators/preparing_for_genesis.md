@@ -20,13 +20,29 @@ See the [Mainnet Launch Schedule](https://dydx-v4-docs.vercel.app/mainnet/schedu
 
 ## Preparing `DYDX` for self-delegation
 
-To participate in the potential Genesis process, there is a requirement for genesis Validators to self-delegate `DYDX` tokens, which necessitates locking `DYDX` on Ethereum ([link 1](https://www.dydx.foundation/blog/exploring-the-future-of-dydx), [link 2](https://www.dydx.foundation/blog/update-on-exploring-the-future-of-dydx), [link 3](https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview), [Community Proposal](https://dydx.community/dashboard/proposal/15)).
+To participate in the potential Genesis process, there is a requirement for genesis Validators to self-delegate `DYDX` tokens, which necessitates locking `DYDX` on Ethereum ([Blogpost 1](https://www.dydx.foundation/blog/exploring-the-future-of-dydx), [Blogpost 2](https://www.dydx.foundation/blog/update-on-exploring-the-future-of-dydx), [Community Docs](https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview), [Community Proposal](https://dydx.community/dashboard/proposal/15)).
+
+---
+
+### ⚠️ Disclaimer 🦔
+
+The steps outlined in this section for migrating `DYDX` tokens from Ethereum to dYdX Chain are merely suggestions based on a particular interpretation of the public contracts and tools available. Users are encouraged to derive their own process and thoroughly test and understand the implications of their actions in interacting with the Ethereum smart contracts. The information provided here is for informational purposes only and should not be construed as financial or investment advice.
+
+dYdX Operations Services Ltd does not assume responsibility or liability for any errors, omissions, or inaccuracies in the information provided, nor for any user's reliance on any such information. Users are solely responsible for the actions they take when bridging tokens, and are advised to consult with a qualified professional before making any decisions regarding the bridging of `DYDX` tokens or engaging in any related activities.
+
+By proceeding to use the information provided on this page, users acknowledge and agree that they do so at their own risk, and that dYdX Operations Services Ltd shall not be liable for any losses, damages, or harm that may result from such use.
+
+
+
+---
 
 To approve the `wethDYDX` Smart Contract to transfer the bridging amount of `DYDX` on your behalf
 1. navigate to [`approve` function](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#writeContract#F2) of the `DYDX` Token on Etherscan
 2. click `Connect to Web3`
-4. input [`wethDYDX` Smart Contract Address](https://etherscan.io/address/0x46b2deae6eff3011008ea27ea36b7c27255ddfa9) and desired amount, e.g. `1000000000000000000000` for bridging `1000 DYDX` tokens ([`DYDX` Token decimals](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#readContract#F24) is `18`)
-5. click `Write` and sign the transaction
+4. input
+    - `spender` address - [`wethDYDX` Smart Contract Address](https://etherscan.io/address/0x46b2deae6eff3011008ea27ea36b7c27255ddfa9)(`0x46b2DeAe6eFf3011008EA27EA36b7c27255ddFA9`)
+    - approval `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX` tokens ([`decimals` for `DYDX`](https://etherscan.io/address/0x92D6C1e31e14520e676a687F0a93788B716BEff5#readContract#F24) is `18`)
+6. click `Write` and sign the transaction
 
 Make sure you have access to your `accAddress` for dYdX Chain - you will need to provide it to the `wethDYDX` Ethereum contract (this is your `delegator_address` in `genesis.json`, for more on Cosmos Addresses, you can check [this link](https://twitter.com/JoeAbbey/status/1633474883815456769)).
 
@@ -40,15 +56,18 @@ go run scripts/bech32_to_hex/bech32_to_hex.go -address <bech32_address>
 To initiate the migration of your self-delegation `DYDX` amount from Ethereum
 1. navigate to the [`bridge` function](https://etherscan.io/address/0x46b2deae6eff3011008ea27ea36b7c27255ddfa9#writeContract#F2) of `wethDYDX` on Etherscan
 2. click `Connect to Web3`
-3. input the bridging `amount`, e.g. `1000000000000000000000` for bridging `1000 DYDX`, and `accAddress` in its hexidecimal form acquired above. You can input `0x` for `memo`.
-4. click `Write` and sign the transaction
+3. input the bridging parameters
+    - `amount` - e.g. `1000000000000000000000` for bridging `1000 DYDX`
+    - `accAddress` - in its hexidecimal form acquired above, make sure the value starts with `0x`
+    - `memo` - use `0x` to pass in empty value
+5. click `Write` and sign the transaction
 
 You can use the `bridge_events.go` script to validate your bridging transaction has been recorded successfully
 ```bash
 go run scripts/bridge_events/bridge_events.go \
-  -denom <token_denom> \
+  -denom adydx \
+  -address 0x46b2DeAe6eFf3011008EA27EA36b7c27255ddFA9 \
   -rpc <rpc_node_url> \
-  -address <bridge_contract_address> \
   -toblock <last_block_inclusive>
 ```
 
