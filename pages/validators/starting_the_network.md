@@ -27,7 +27,7 @@ Feel free to inspect the content of the `genesis.json` file, and let us know if 
 The network launch binary should be available in the [dYdX Protocol repository](https://github.com/dydxprotocol/v4-chain/releases)
 
 ```bash
-# Set the correct version, e.g. "v0.2.1"
+# Set the correct version, e.g. "v1.0.0"
 export BINARY_VERSION=<version>
 # Choose a platform. Supported: linux-amd64, linux-arm64
 export DYDX_PLATFORM="linux-amd64"
