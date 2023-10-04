@@ -77,7 +77,7 @@ In case you would like to experiment with bridging on Sepolia first, you can use
 
 Download the latest binaries from [dYdX Protocol Github Repo](https://github.com/dydxprotocol/v4-chain/releases).
 
-Choose the version (e.g. `"v0.2.2"`), and binary (`linux-amd64` as example) for the corresponding platform, and set up in $PATH:
+Choose the version (e.g. `"v1.0.0"`), and binary (`linux-amd64` as example) for the corresponding platform, and set up in $PATH:
 
 ```bash
 # Set the desired version
@@ -135,6 +135,8 @@ You could either create a new key for the mainnet, or import an existing key.
 
 **Option 1: Creating a New Key**
 
+⚠️ The below keyrings are examples, we do not recommend using `test` for production.
+
 ```bash
 # Generate key-ring. 
 # Using the `test` keyring-backend as example. 
@@ -160,13 +162,20 @@ MY_VALIDATOR_ADDRESS=$(dydxprotocold keys show $DYDX_KEY_NAME -a --keyring-backe
 
 ## Create `gentx`
 
-### Add Genesis Account
+### Download pregenesis.json
 
-Before you can create a gentx, you’ll need to add a genesis account (using the address generated above) to the `genesis.json` file. This local `genesis.json` file will not be used for the mainnet, and only helps to generate a gentx. Note that `DYDX` is the native token used for the public mainnet.
+We recommend you use the `pregenesis.json` published in dYdX Operations subDAO's [GitHub repo](https://github.com/dydxopsdao/networks/tree/main/dydx-mainnet-1).
 
+Download `pregenesis.json` file into `$HOME_MAINNET_1`, replacing the previous `genesis.json` file:
 ```bash
-dydxprotocold add-genesis-account $MY_VALIDATOR_ADDRESS 1000000000000000000000DYDX --home=$HOME_MAINNET_1
+# Run at root of `networks`.
+export HOME_MAINNET_1=<your dir>
+git checkout main
+git pull origin main
+cp dydx-mainnet-1/pregenesis.json $HOME_MAINNET_1/config/genesis.json
 ```
+
+Feel free to inspect the content of the `pregenesis.json` file, and let us know if there’s any questions/concerns.
 
 ### Generate `gentx`
 
@@ -181,8 +190,10 @@ You can also use the below optional flags:
   --pubkey="xxx"
 ```
 
+You may consider self-delegating slightly less than 100% of your bridged DYDX tokens.
+
 ```bash
-dydxprotocold gentx $DYDX_KEY_NAME 1000000000000000000000DYDX --moniker $DYDX_MONIKER --keyring-backend test --chain-id $CHAIN_ID --home=$HOME_MAINNET_1
+dydxprotocold gentx $DYDX_KEY_NAME <self-delegation amount>adydx --moniker $DYDX_MONIKER --keyring-backend test --chain-id $CHAIN_ID --home=$HOME_MAINNET_1
 ```
 
 It will output something similar to:
