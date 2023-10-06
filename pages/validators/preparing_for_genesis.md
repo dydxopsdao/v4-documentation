@@ -1,6 +1,6 @@
 # Preparing for Genesis
 
-***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Trading Inc. ("dYdX") database, you hereby and thereby agree to the [v4 Terms of Use](https://dydx.exchange/v4-terms) and [Privacy Policy](https://dydx.exchange/privacy) governing such information, and you agree that such action establishes a binding agreement between you and dYdX.***
+***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Trading Inc. ("dYdX") database, you hereby and thereby agree to the [dYdX Chain Terms of Use](https://dydx.exchange/v4-terms) and [Privacy Policy](https://dydx.exchange/privacy) governing such information, and you agree that such action establishes a binding agreement between you and dYdX.***
 
 
 ## Goals
@@ -16,7 +16,7 @@ These are necessary steps to register your validator in the genesis and prepare 
 
 ## Timeline
 
-See the [Mainnet Launch Schedule](https://dydx-v4-docs.vercel.app/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to prepare your `DYDX` tokens for self-delegation, and submit your gentx by the deadlines highlighted in the schedule.
+See the [Mainnet Launch Schedule](https://dydx-chain-docs.vercel.app/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to prepare your `DYDX` tokens for self-delegation, and submit your gentx by the deadlines highlighted in the schedule.
 
 ## Preparing `DYDX` for self-delegation
 
@@ -228,7 +228,7 @@ git clone https://github.com/dydxopsdao/networks.git
 git checkout -b $DYDX_MONIKER/gentx
 ```
 
-3. Copy the gentx file to the `v4-mainnets` repo (ensure that it is in the correct folder)
+3. Copy the gentx file to the `networks` repo (ensure that it is in the correct folder)
 
 ```bash
 cp $HOME_MAINNET_1/config/gentx/gentx-xxxxxxxxxxxx.json v4-mainnets/dydx-mainnet-1/gentx/gentx-$DYDX_MONIKER.json

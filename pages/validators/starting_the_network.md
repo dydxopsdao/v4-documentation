@@ -4,7 +4,7 @@
 
 ## Timeline
 
-See `dydx-mainnet-1` [Launch Schedule](https://dydx-v4-docs.vercel.app/mainnet/schedule). Please complete the following instructions by the scheduled time for `Network Launch`.
+See `dydx-mainnet-1` [Launch Schedule](https://dydx-chain-docs.vercel.app/mainnet/schedule). Please complete the following instructions by the scheduled time for `Network Launch`.
 
 ## Downloading `genesis.json`
 
@@ -110,7 +110,7 @@ dydxprotocold start --p2p.seeds="TBD" --home="$HOME_MAINNET_1"
 
 ### Option 2: Run `dydxprotocold` with `cosmovisor`
 
-Install and initialize `cosmovisor` with instructions [here](https://dydx-v4-docs.vercel.app/validators/cosmovisor). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
+Install and initialize `cosmovisor` with instructions [here](https://dydx-chain-docs.vercel.app/validators/cosmovisor). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
 
 ```bash
 cosmovisor run version --long

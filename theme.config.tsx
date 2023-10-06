@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s · dYdX · v4",
+        titleTemplate: "%s · dYdX · Chain",
       };
     }
   },
@@ -23,7 +23,7 @@ const config: DocsThemeConfig = {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="og:title"
-          content={title ? title + " · dYdX · v4" : "dYdX · v4"}
+          content={title ? title + " · dYdX · Chain" : "dYdX · Chain"}
         />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.png" type="image/png" />

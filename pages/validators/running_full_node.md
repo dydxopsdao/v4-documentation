@@ -13,7 +13,7 @@ Download the correct `genesis.json` from the [`networks` repository](https://git
 
 ## Start a Full Node
 
-Find the seed node's ID and the IP address from the [mainnet info page](https://dydx-v4-docs.vercel.app/mainnet/mainnet_info). Then, run the following command to start a non-validating full node.
+Find the seed node's ID and the IP address from the [mainnet info page](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info). Then, run the following command to start a non-validating full node.
 
 ```bash
 dydxprotocold start --p2p.seeds="25dd504d86d82673b9cf94fe78c00714f236c9f8@13.59.4.93:26656" --non-validating-full-node=true
