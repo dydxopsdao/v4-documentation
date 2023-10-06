@@ -39,4 +39,4 @@ AWS service estimates:
   - ~6000 custom metrics / hour
 - PagerDuty — alerting
   - ~4 engineers
-- v4 open source software is subject to [terms and conditions](https://dydx.exchange/v4-terms). dYdX will not operate or control any protocol that runs the software. The software licensing requires that users of the software comply with all applicable laws and regulations.
+- dYdX Chain open source software is subject to [terms and conditions](https://dydx.exchange/v4-terms). dYdX will not operate or control any protocol that runs the software. The software licensing requires that users of the software comply with all applicable laws and regulations.
