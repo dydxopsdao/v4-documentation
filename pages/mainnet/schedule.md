@@ -2,10 +2,10 @@
 
 | Date                 | Activity                                                        |
 | -------------------- | --------------------------------------------------------------- |
-| TBD	| 🌉 Start migrating `DYDX` using `wethDYDX` smart contract
-| TBD	| 📤 Start submitting `gentx` for `dydx-mainnet-1`
-| TBD	| ⛔ `DYDX` migration window ends (genesis snapshot block)
-| TBD	| 🏁 Deadline for submitting `gentx`
+| 2023/09/27 12:00 UTC	| 🌉 Start migrating `DYDX` using `wethDYDX` smart contract
+| 2023/10/05 12:00 UTC	| 📤 Start submitting `gentx` for `dydx-mainnet-1`
+| 2023/10/13 12:00 UTC	| ⛔ `DYDX` migration window ends (genesis snapshot block)
+| 2023/10/18 12:00 UTC	| 🏁 Deadline for submitting `gentx`
 | TBD	| 🎁 Distribute final binary and `genesis.json` for launch
 | TBD	| 🚀 Network Launch (backend only)
 | TBD	| 🌉 Public DYDX Bridge deployed
