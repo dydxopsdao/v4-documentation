@@ -100,7 +100,7 @@ dydxprotocold version --long
 The output should look like this (**make sure** the `version` and `commit` is consistent):
 
 ```bash
-commit: e2ea4e4ebebbe708f42d77c890214941fc2830ae
+commit: 6ed30700011e4d4433272286afaed1465ae71dc3
 cosmos_sdk_version: v0.47.3
 go: go version go1.19.9 <platform>
 name: dydxprotocol
@@ -202,7 +202,7 @@ It will output something similar to:
 Genesis transaction written to "/Users/XXX/.dydx-mainnet-1/config/gentx/gentx-ae8a1fd5828866c435f9b559fad39e1bc19a06dc.json"
 ```
 
-See [here](https://github.com/dydxprotocol/v4-testnets/blob/main/dydx-testnet-3/gentx/gentx-dydx-1.json) for an example gentx file.
+See [here](https://github.com/dydxprotocol/v4-testnets/blob/main/dydx-testnet-4/gentx/gentx-dydx-1.json) for an example gentx file.
 
 <aside>
 💡 Do not manually modify the content of generated `gentx` file (except for filename). This will result in invalid signature for transaction.
@@ -216,25 +216,27 @@ See [here](https://github.com/dydxprotocol/v4-testnets/blob/main/dydx-testnet-3/
 
 ## Submit Your `gentx`
 
-1. Clone the [Mainnet Github Repo](https://github.com/dydxopsdao/networks).
+1. Fork the [Mainnet Github Repo](https://github.com/dydxopsdao/networks).
+ 
+2. Clone the forked repo.
 
 ```bash
-git clone https://github.com/dydxopsdao/networks.git
+git clone https://github.com/<your username or organization>/networks.git
 ```
 
-2. Create a new local branch:
+3. Create a new local branch:
 
 ```bash
 git checkout -b $DYDX_MONIKER/gentx
 ```
 
-3. Copy the gentx file to the `networks` repo (ensure that it is in the correct folder)
+4. Copy the gentx file to the `networks` repo (ensure that it is in the correct folder)
 
 ```bash
 cp $HOME_MAINNET_1/config/gentx/gentx-xxxxxxxxxxxx.json v4-mainnets/dydx-mainnet-1/gentx/gentx-$DYDX_MONIKER.json
 ```
 
-4. Commit and push to your repo.
+5. Commit and push to your repo.
 
 ```bash
 git add dydx-mainnet-1/gentx/*
@@ -242,9 +244,9 @@ git commit -m "$DYDX_MONIKER gentx"
 git push origin $DYDX_MONIKER/gentx
 ```
 
-5. Create a pull request from your branch into `main`
+6. Create a pull request in the original `dydxopsdao/networks` repo. In other words, the `base repository` should be `dydxopsdao/networks` and the `base branch`` should be `main`. 
 
-6. The pull request should trigger a "Validate Genesis" workflow, which runs some sanity checks on the submitted `gentx`. Please try to resolve any issue if the workflow doesn't pass, and post in `#ext-dydx-v4-validators-discussion` if you need help.
+7. The maintainers will run the "Validate Genesis" workflow, which runs some sanity checks on the submitted `gentx`. Please try to resolve any issue if the workflow doesn't pass, and post in `#ext-dydx-v4-validators-discussion` if you need help.
 
-## Changelog
-2023-09-27: cloned from [dYdX Testnets Teacher](https://github.com/dydxprotocol/v4-documentation) and modified for `dydx-mainnet-1`
+8. Maintainers will review and merge the PRs. If you need any help, post in `#ext-dydx-v4-validators-discussion`.
+

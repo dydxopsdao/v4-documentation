@@ -53,12 +53,19 @@ dydxprotocold version --long
 The output should look like this (**make sure** the `version` and `commit` is correct):
 
 ```bash
-commit: df7ab1ad4e2feae1f958d50b67ee76851ea3e986
+commit: a814748dfb39dc70302becbca95c19606e3bab8e
 cosmos_sdk_version: v0.47.3
 go: go version go1.19.9 <platform>
 name: dydxprotocol
 server_name: dydxprotocold
 version: <version>
+```
+
+## [💡💡💡IMPORTANT:💡💡💡] Verify Config 
+
+Please check that `timeout_commit` value under `$HOME_MAINNET_1/config/config.toml` is equal to
+```
+timeout_commit = "500ms"
 ```
 
 The Cosmos gRPC service is used by various daemon processes, and **must be enabled** in order for the protocol to operate.
@@ -102,10 +109,10 @@ For your node to successfully ingest bridge transactions from the relevant block
 
 ### Option 1: Run `dydxprotocold` Directly
 
-Run `dydxprotocold` and connect to the seed node:
+Run `dydxprotocold` and connect to the seed node. The seed node info can be found in [Mainnet Info](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info):
 
 ```bash
-dydxprotocold start --p2p.seeds="TBD" --home="$HOME_MAINNET_1"
+dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home="$HOME_MAINNET_1"
 ```
 
 ### Option 2: Run `dydxprotocold` with `cosmovisor`
@@ -119,7 +126,7 @@ cosmovisor run version --long
 The output should look like this (**make sure** the `version` is consistent):
 
 ```bash
-commit: df7ab1ad4e2feae1f958d50b67ee76851ea3e986
+commit: a814748dfb39dc70302becbca95c19606e3bab8e
 cosmos_sdk_version: v0.47.3
 go: go version go1.19.9 <platform>
 name: dydxprotocol
@@ -130,10 +137,17 @@ version: <version>
 Run `dydxprotocold` with `cosmovisor` and connect to the seed node. 
 
 ```bash
-cosmovisor run start --p2p.seeds="TBD" --home="$HOME_MAINNET_1"
+cosmovisor run start --p2p.seeds="<comma separated seed nodes>" --home="$HOME_MAINNET_1"
 ```
 
 ### Announcing yourself and cooperating with others
+
+<aside>
+💡 The seed node should be sufficient for network startup. However, if for any reason you’re seeing network issues (can troubleshoot at `localhost:26657/net_info`), you can also add the following flag to use the dYdX internal validators as persistent peers:
+
+`—p2p.persistent_peers="TODO”`
+
+</aside>
 
 Validators are also encouraged to share their IPs in #ext-dydx-v4-validators-discussion and use each other as persistent peers. Each p2p.persistent_peers are separated by comma and use the format `<node_id>@<public_ip_address>:<port>`.
 
