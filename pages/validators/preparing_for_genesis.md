@@ -77,7 +77,7 @@ In case you would like to experiment with bridging on Sepolia first, you can use
 
 Download the latest binaries from [dYdX Protocol Github Repo](https://github.com/dydxprotocol/v4-chain/releases).
 
-Choose the version (e.g. `"v0.3.1"`), and binary (`linux-amd64` as example) for the corresponding platform, and set up in $PATH:
+Choose the version (e.g. `"v0.4.0"`), and binary (`linux-amd64` as example) for the corresponding platform, and set up in $PATH:
 
 ```bash
 # Set the desired version
