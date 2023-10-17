@@ -1,4 +1,4 @@
-Please find the open source repositories on our [GitHub](https://github.com/dydxprotocol)
+Please find the dYdX Chian open source repositories on [GitHub](https://github.com/dydxprotocol)
 
 * [Monorepo](https://github.com/dydxprotocol/v4-chain)
     * [Protocol](https://github.com/dydxprotocol/v4-chain/protocol)
