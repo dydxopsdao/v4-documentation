@@ -4,9 +4,11 @@
   "validators": "Validators",
   "mainnet": "Mainnet",
   "integration_docs": "Integration documents",
-  "developer_links": "Developer links",
+  "trading": "Trading",
+  "developers": "Developers",
   "governance": "Governance",
   "operational_checklist": "Operational checklist",
+  "security": "Security",
   "app": {
     "title": "Mainnet",
     "type": "page",

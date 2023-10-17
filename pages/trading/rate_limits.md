@@ -8,7 +8,7 @@ Canceling orders is rate limited per order type and account and is applied over 
 
 | Order Type               | # Blocks | Limit     |
 | ------------------------ | -------- | --------- |
-| Short-term               | 1        | 50        |
+| Short-term               | 1        | 200       |
 | Long-term or Conditional | 1        | Unlimited |
 
 ### Place Order Rate Limits
@@ -17,7 +17,7 @@ Placing orders is rate limited per order type and account and is applied over a 
 
 | Order Type               | # Blocks | Limit |
 | ------------------------ | -------- | ----- |
-| Short-term               | 1        | 50    |
+| Short-term               | 1        | 200   |
 | Long-term or Conditional | 1        | 2     |
 | Long-term or Conditional | 100      | 20    |
 
