@@ -50,7 +50,7 @@ Check that the binary version is correct:
 dydxprotocold version --long
 ```
 
-The output should look like this (**make sure** the `version` and `commit` is correct):
+The output should look like this (**make sure** the `version` and `commit` are consistent):
 
 ```bash
 commit: a814748dfb39dc70302becbca95c19606e3bab8e
@@ -123,7 +123,7 @@ Install and initialize `cosmovisor` with instructions [here](https://dydx-chain-
 cosmovisor run version --long
 ```
 
-The output should look like this (**make sure** the `version` and `commit` is correct):
+The output should look like this (**make sure** the `version` and `commit` are consistent):
 
 ```bash
 commit: a814748dfb39dc70302becbca95c19606e3bab8e

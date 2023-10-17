@@ -97,7 +97,7 @@ Verify the binary version:
 dydxprotocold version --long
 ```
 
-The output should look like this (**make sure** the `version` and `commit` is consistent):
+The output should look like this (**make sure** the `version` and `commit` are consistent):
 
 ```bash
 commit: a814748dfb39dc70302becbca95c19606e3bab8e
