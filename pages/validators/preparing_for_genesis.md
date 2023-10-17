@@ -100,12 +100,12 @@ dydxprotocold version --long
 The output should look like this (**make sure** the `version` and `commit` is consistent):
 
 ```bash
-commit: 6ed30700011e4d4433272286afaed1465ae71dc3
+commit: a814748dfb39dc70302becbca95c19606e3bab8e
 cosmos_sdk_version: v0.47.3
 go: go version go1.19.9 <platform>
 name: dydxprotocol
 server_name: dydxprotocold
-version: <version>
+version: 0.4.0
 ```
 
 ## Initialize your node
