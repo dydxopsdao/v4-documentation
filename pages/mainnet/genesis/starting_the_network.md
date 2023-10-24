@@ -78,20 +78,20 @@ timeout_commit = "500ms"
 
 Seed nodes are how the nodes within the network communicate. Adding them ensures nodes have healthy peers.
 
+You can find a list of seed nodes [here](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info)
+
 ```bash
-seeds="20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:23856"
+seeds="<comma separated seed nodes>"
 sed -i -e "s|^seeds *=.*|seeds = \"$seeds\"|" $HOME/.dydxprotocol/config/config.toml
 ```
 
 ### app.toml ###
 
-The minumum gas prices **must be set** for USDC and DYDX. Please make sure the `minimum-gas-prices` parameter is configured with 
-the correct *denoms* in `$HOME/.dydxprotocol/config/app.toml`. The price itself is up to each validator, we suggest the 
-following initial values (both gas prices are represented in `Xe-18` full coin)
-
 #### Minimum Gas Price
 
-Setting a known minimum gas price ensures interacting with the network is consistent and reliable.
+Setting a known minimum gas price ensures interacting with the network is consistent and reliable. The minumum gas prices **must be set** for USDC and DYDX. Please make sure the `minimum-gas-prices` parameter is configured with 
+the correct *denoms* in `$HOME/.dydxprotocol/config/app.toml`. The price itself is up to each validator, we suggest the 
+following initial values (both gas prices are represented in `Xe-18` full coin)
 
 ```bash
 sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.025ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5,12500000000adydx\"|" $HOME/.dydxprotocol/config/app.toml

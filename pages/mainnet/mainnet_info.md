@@ -4,9 +4,9 @@ To join the mainnet network, you need to run the correct binary version and spec
 
 The above info can be found in this [`networks` repository](https://github.com/dydxopsdao/networks).
 
-| Chain ID | Description     | Status     | Binary Version | Seed Node ID and IP Address                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Github                                                                    |
-| ---------------- | --------------- | ---------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `dydx-mainnet-1` | Main Network | 🔴 Inactive | 1.0.0     | TBD                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | [Link](https://github.com/dydxopsdao/networks/tree/main/dydx-mainnet-1) |
+### Seed nodes
+- Polkachu: `ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:23856`
+- Lavender.Five: `20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:23856`             
 
 ### Chain info
 ```
