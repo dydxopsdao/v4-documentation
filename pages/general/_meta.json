@@ -1,4 +1,6 @@
 {
+  "terms_of_use": "Terms of Use",
   "official_links": "Official links",
-  "terms_of_use_and_privacy_policy": "Terms of Use and Privacy Policy"
+  "validator_resources": "Validator Resources",
+  "running_full_node": "Running a full node"
 }
