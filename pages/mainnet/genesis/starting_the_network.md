@@ -13,7 +13,8 @@ After the `gentx` collection process is complete, the dYdX Operations subDAO tea
 Download `genesis.json` file into `$HOME_MAINNET_1`, replacing the previous `genesis.json` file:
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json > $HOME/.dydxprotocol/config/genesis.json
+export HOME_MAINNET_1=<your dir>
+curl -Ls https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json > $HOME_MAINNET_1/config/genesis.json
 ```
 
 Feel free to inspect the content of the `genesis.json` file, and let us know if there’s any questions/concerns.
