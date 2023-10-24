@@ -1,6 +1,6 @@
 # Starting the network
 
-***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Trading Inc. ("dYdX") database, you hereby and thereby agree to the [v4 Terms of Use](https://dydx.exchange/v4-terms) and [Privacy Policy](https://dydx.exchange/privacy) governing such information, and you agree that such action establishes a binding agreement between you and dYdX.***
+***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Operations Services Ltd. ("dYdX Operations subDAO") database, you hereby and thereby agree to the [dYdX Chain Docs Terms of Use](https://dydx-chain-docs.vercel.app/general/terms_of_use) governing such information, and you agree that such action establishes a binding agreement between you and dYdX Operations subDAO.***
 
 ## Timeline
 
@@ -63,9 +63,18 @@ version: 1.0.0
 
 ## [💡💡💡IMPORTANT:💡💡💡] Verify Config 
 
+### config.toml ###
+
 Please check that `timeout_commit` value under `$HOME_MAINNET_1/config/config.toml` is equal to
 ```
 timeout_commit = "500ms"
+```
+
+### app.toml ###
+
+The minumum gas prices **must be set** for USDC and DYDX. Please make sure the `minimum-gas-prices` parameter is configured with the correct *denoms* in `$HOME_MAINNET_1/config/app.toml`. The price itself is up to each validator, we suggest the following initial values (both gas prices are represented in `Xe-8` full coin)
+```
+minimum-gas-prices = "0.025ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5,12500000000adydx"
 ```
 
 The Cosmos gRPC service is used by various daemon processes, and **must be enabled** in order for the protocol to operate.
@@ -79,7 +88,6 @@ enable = true
 
 In addition, non-standard gRPC ports are not supported at this time. Please run on port 9090, which is the default
 port specified in the config file:
-
 ```
 [grpc]
 
@@ -92,7 +100,7 @@ address = "0.0.0.0:9090"
 **Note** that grpc can be also be configured via start flags. Be careful not to change the default settings with either
 of the following flags: `--grpc.enable`, `--grpc.address`.
 
-## Ethereum RPC Endpoint
+## [💡💡💡IMPORTANT:💡💡💡] Ethereum RPC Endpoint
 
 For the chain to process bridge transactions from Ethereum, Ethereum testnet, or other chain that supports the `eth_getLogs` RPC method, the bridge daemon queries an RPC endpoint for logs emitted by the bridge contract. By default, a node will use a public testnet endpoint that may have rate-limiting, low reliability, or other restricted functionality.
 

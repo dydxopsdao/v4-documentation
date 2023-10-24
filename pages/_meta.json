@@ -1,16 +1,9 @@
 {
   "index": "Introduction",
   "general": "General",
-  "validators": "Validators",
   "mainnet": "Mainnet",
-  "integration_docs": "Integration documents",
-  "trading": "Trading",
-  "developers": "Developers",
-  "governance": "Governance",
-  "operational_checklist": "Operational checklist",
-  "security": "Security",
   "app": {
-    "title": "Mainnet",
+    "title": "dYdX Chain Mainnet",
     "type": "page",
     "href": "https://dydx.trade",
     "newWindow": true

@@ -15,12 +15,11 @@ Download the correct `genesis.json` from the [`networks` repository](https://git
 
 Find the seed node's ID and the IP address from the [mainnet info page](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info). Then, run the following command to start a non-validating full node.
 
-For example,
 ```bash
-dydxprotocold start --p2p.seeds="25dd504d86d82673b9cf94fe78c00714f236c9f8@13.59.4.93:26656" --non-validating-full-node=true
+dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --non-validating-full-node=true
 ```
 
 💡💡💡**Note**: if you want to disable gRPC on your full node, it is important to start the node with the
 `--non-validating-full-node=true` flag. Otherwise, the application will require that gRPC be enabled. 💡💡💡
 
-If you would like to access snapshots for the test-net, please see [here](https://bwarelabs.com/snapshots)
+

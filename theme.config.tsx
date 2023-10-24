@@ -45,12 +45,12 @@ const config: DocsThemeConfig = {
     key: "v3-docs-redirect-mainnet1",
     text: (
       <span className="banner">
-        ✨ Looking for our old docs?{" "}
+        ✨ Join our forum!{" "}
         <button
-          onClick={() => window.open("https://docs.dydx.exchange", "_blank")}
+          onClick={() => window.open("https://dydx.forum", "_blank")}
           className="banner-button"
         >
-          v3 Docs
+          dYdX Forum
         </button>
       </span>
     ),
