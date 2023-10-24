@@ -6,22 +6,27 @@
 
 See `dydx-mainnet-1` [Launch Schedule](https://dydx-chain-docs.vercel.app/mainnet/schedule). Please complete the following instructions by the scheduled time for `Network Launch`.
 
-## Downloading `genesis.json`
+## Getting Started
+
+This document assumes you've already [Prepared for Genesis](https://dydx-chain-docs.vercel.app/mainnet/genesis/preparing_for_genesis). 
+If you haven't, please complete the [Initialize Your Node](https://dydx-chain-docs.vercel.app/mainnet/genesis/preparing_for_genesis#initialize-your-node) step.
+
+## Download `genesis.json`
 
 After the `gentx` collection process is complete, the dYdX Operations subDAO team will announce in the `#ext-dydx-v4-validators-updates` channel that the finalized `genesis.json` file is ready for download. 
 
-Download `genesis.json` file into `$HOME_MAINNET_1`, replacing the previous `genesis.json` file:
+Download `genesis.json` file into `$HOME/.dydxprotocol`, replacing the previous `genesis.json` file:
 
 ```bash
-export HOME_MAINNET_1=<your dir>
-curl -Ls https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json > $HOME_MAINNET_1/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json > $HOME/.dydxprotocol/config/genesis.json
 ```
 
 Feel free to inspect the content of the `genesis.json` file, and let us know if there’s any questions/concerns.
 
+
 ## Get Latest Binary
 
-The network launch binary should be available in the [dYdX Protocol repository](https://github.com/dydxprotocol/v4-chain/releases)
+The network launch binary is available at [dYdX Protocol repository](https://github.com/dydxprotocol/v4-chain/releases)
 
 ```bash
 # Set the correct version, e.g. "v1.0.0"
@@ -62,21 +67,41 @@ version: 1.0.0
 
 ### config.toml ###
 
-Please check that `timeout_commit` value under `$HOME_MAINNET_1/config/config.toml` is equal to
+#### Timeout Commit
+
+Please check that `timeout_commit` value under `$HOME/.dydxprotocol/config/config.toml` is equal to
 ```
 timeout_commit = "500ms"
 ```
 
+#### Add Seed Nodes
+
+Seed nodes are how the nodes within the network communicate. Adding them ensures nodes have healthy peers.
+
+```bash
+seeds="20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:23856"
+sed -i -e "s|^seeds *=.*|seeds = \"$seeds\"|" $HOME/.dydxprotocol/config/config.toml
+```
+
 ### app.toml ###
 
-The minumum gas prices **must be set** for USDC and DYDX. Please make sure the `minimum-gas-prices` parameter is configured with the correct *denoms* in `$HOME_MAINNET_1/config/app.toml`. The price itself is up to each validator, we suggest the following initial values (both gas prices are represented in `Xe-8` full coin)
-```
-minimum-gas-prices = "0.025ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5,12500000000adydx"
+The minumum gas prices **must be set** for USDC and DYDX. Please make sure the `minimum-gas-prices` parameter is configured with 
+the correct *denoms* in `$HOME/.dydxprotocol/config/app.toml`. The price itself is up to each validator, we suggest the 
+following initial values (both gas prices are represented in `Xe-18` full coin)
+
+#### Minimum Gas Price
+
+Setting a known minimum gas price ensures interacting with the network is consistent and reliable.
+
+```bash
+sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.025ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5,12500000000adydx\"|" $HOME/.dydxprotocol/config/app.toml
 ```
 
+#### Enable gRPC
+
 The Cosmos gRPC service is used by various daemon processes, and **must be enabled** in order for the protocol to operate.
-Please make sure that grpc is enabled in `$HOME_MAINNET_1/config/app.toml`:
-```
+Please make sure that grpc is enabled in `$HOME/.dydxprotocol/config/app.toml`:
+```toml
 [grpc]
 
 # Enable defines if the gRPC server should be enabled.
@@ -85,7 +110,7 @@ enable = true
 
 In addition, non-standard gRPC ports are not supported at this time. Please run on port 9090, which is the default
 port specified in the config file:
-```
+```toml
 [grpc]
 
 ...
@@ -117,7 +142,7 @@ For your node to successfully ingest bridge transactions from the relevant block
 Run `dydxprotocold` and connect to the seed node. The seed node info can be found in [Mainnet Info](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info):
 
 ```bash
-dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home="$HOME_MAINNET_1"
+dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol
 ```
 
 ### Option 2: Run `dydxprotocold` with `cosmovisor`
@@ -142,7 +167,7 @@ version: 1.0.0
 Run `dydxprotocold` with `cosmovisor` and connect to the seed node. 
 
 ```bash
-cosmovisor run start --p2p.seeds="<comma separated seed nodes>" --home="$HOME_MAINNET_1"
+cosmovisor run start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol
 ```
 
 ### Announcing yourself and cooperating with others
@@ -156,10 +181,10 @@ cosmovisor run start --p2p.seeds="<comma separated seed nodes>" --home="$HOME_MA
 
 Validators are also encouraged to share their IPs in #ext-dydx-v4-validators-discussion and use each other as persistent peers. Each p2p.persistent_peers are separated by comma and use the format `<node_id>@<public_ip_address>:<port>`.
 
-To find your node id, run
+To find your peer information, run
 
 ```protobuf
-dydxprotocold tendermint show-node-id
+echo $(dydxprotocold tendermint show-node-id)@$(curl ifconfig.me):26656
 ```
 
 ### Sanity Check
