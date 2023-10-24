@@ -3,10 +3,13 @@
 **dYdX Chain Mainnet Documentation:**\
 [https://dydx-chain-docs.vercel.app/](https://dydx-chain-docs.vercel.app/)
 
-**DYDX Migration/Bridge UI:**\
+**dYdX Chain web frontend (soon):**\
+[https://dydx.trade/](https://dydx.trade/)
+
+**DYDX Migration/Bridge UI (soon):**\
 [https://bridge.dydx.trade/](https://bridge.dydx.trade/)
 
-**Mainnet Status Page:**\
+**Mainnet Status Page (soon):**\
 [https://status.dydx.trade](https://status.dydx.trade)
 
 **Public Testnet and Protocol Resources:**\
