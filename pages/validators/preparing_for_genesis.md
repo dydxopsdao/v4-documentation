@@ -77,7 +77,7 @@ In case you would like to experiment with bridging on Sepolia first, you can use
 
 Download the latest binaries from [dYdX Protocol Github Repo](https://github.com/dydxprotocol/v4-chain/releases).
 
-Choose the version (e.g. `"v0.4.0"`), and binary (`linux-amd64` as example) for the corresponding platform, and set up in $PATH:
+Choose the version (e.g. `"v1.0.0"`), and binary (`linux-amd64` as example) for the corresponding platform, and set up in $PATH:
 
 ```bash
 # Set the desired version
@@ -97,15 +97,15 @@ Verify the binary version:
 dydxprotocold version --long
 ```
 
-The output should look like this (**make sure** the `version` and `commit` is consistent):
+The output should look like this (**make sure** the `version` and `commit` are consistent):
 
 ```bash
-commit: 6ed30700011e4d4433272286afaed1465ae71dc3
+commit: bd3ff30248d271719c687cc10159de479fdd904d
 cosmos_sdk_version: v0.47.3
-go: go version go1.19.9 <platform>
+go: go version go1.21.3 <platform>
 name: dydxprotocol
 server_name: dydxprotocold
-version: <version>
+version: 1.0.0
 ```
 
 ## Initialize your node
