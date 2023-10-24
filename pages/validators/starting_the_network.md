@@ -53,12 +53,12 @@ dydxprotocold version --long
 The output should look like this (**make sure** the `version` and `commit` are consistent):
 
 ```bash
-commit: a814748dfb39dc70302becbca95c19606e3bab8e
+commit: bd3ff30248d271719c687cc10159de479fdd904d
 cosmos_sdk_version: v0.47.3
-go: go version go1.19.9 <platform>
+go: go version go1.21.3 <platform>
 name: dydxprotocol
 server_name: dydxprotocold
-version: 0.4.0
+version: 1.0.0
 ```
 
 ## [💡💡💡IMPORTANT:💡💡💡] Verify Config 
@@ -126,12 +126,12 @@ cosmovisor run version --long
 The output should look like this (**make sure** the `version` and `commit` are consistent):
 
 ```bash
-commit: a814748dfb39dc70302becbca95c19606e3bab8e
+commit: bd3ff30248d271719c687cc10159de479fdd904d
 cosmos_sdk_version: v0.47.3
-go: go version go1.19.9 <platform>
+go: go version go1.21.3 <platform>
 name: dydxprotocol
 server_name: dydxprotocold
-version: 0.4.0
+version: 1.0.0
 ```
 
 Run `dydxprotocold` with `cosmovisor` and connect to the seed node. 
