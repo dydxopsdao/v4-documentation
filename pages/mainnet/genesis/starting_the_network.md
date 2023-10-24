@@ -10,14 +10,10 @@ See `dydx-mainnet-1` [Launch Schedule](https://dydx-chain-docs.vercel.app/mainne
 
 After the `gentx` collection process is complete, the dYdX Operations subDAO team will announce in the `#ext-dydx-v4-validators-updates` channel that the finalized `genesis.json` file is ready for download. 
 
-Download `genesis.json` file into `$HOME_MAINNET_1` , replacing the previous `genesis.json` file:
+Download `genesis.json` file into `$HOME_MAINNET_1`, replacing the previous `genesis.json` file:
 
 ```bash
-# Run at root of `networks`.
-export HOME_MAINNET_1=<your dir>
-git checkout main
-git pull origin main
-cp dydx-mainnet-1/genesis.json $HOME_MAINNET_1/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/dydxopsdao/networks/main/dydx-mainnet-1/genesis.json > $HOME/.dydxprotocol/config/genesis.json
 ```
 
 Feel free to inspect the content of the `genesis.json` file, and let us know if there’s any questions/concerns.
