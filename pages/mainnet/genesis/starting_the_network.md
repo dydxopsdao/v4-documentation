@@ -135,7 +135,7 @@ The output should look like this (**make sure** the `version` and `commit` are c
 
 ```bash
 commit: bd3ff30248d271719c687cc10159de479fdd904d
-cosmos_sdk_version: v0.47.3
+cosmos_sdk_version: v0.47.4
 go: go version go1.21.3 <platform>
 name: dydxprotocol
 server_name: dydxprotocold
