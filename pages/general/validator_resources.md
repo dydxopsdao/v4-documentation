@@ -11,5 +11,3 @@ The main source source of information is the [v4 Teacher](https://v4-teacher.ver
 [**Performing upgrades**](https://v4-teacher.vercel.app/validators/performing_upgrades)
 
 [**Voting for upgrade proposals**](https://v4-teacher.vercel.app/validators/voting_for_upgrade_proposals)
-
-and more.

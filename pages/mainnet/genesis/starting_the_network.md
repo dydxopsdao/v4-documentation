@@ -63,9 +63,18 @@ version: 1.0.0
 
 ## [💡💡💡IMPORTANT:💡💡💡] Verify Config 
 
+### config.toml ###
+
 Please check that `timeout_commit` value under `$HOME_MAINNET_1/config/config.toml` is equal to
 ```
 timeout_commit = "500ms"
+```
+
+### app.toml ###
+
+The minumum gas prices **must be set** for USDC and DYDX. Please make sure the `minimum-gas-prices` parameter is configured with the correct *denoms* in `$HOME_MAINNET_1/config/app.toml`. The price itself is up to each validator, we suggest the following initial values (both gas prices are represented in `Xe-8` full coin)
+```
+minimum-gas-prices = "0.025ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5,12500000000adydx"
 ```
 
 The Cosmos gRPC service is used by various daemon processes, and **must be enabled** in order for the protocol to operate.
@@ -79,7 +88,6 @@ enable = true
 
 In addition, non-standard gRPC ports are not supported at this time. Please run on port 9090, which is the default
 port specified in the config file:
-
 ```
 [grpc]
 
