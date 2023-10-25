@@ -11,6 +11,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 - Lavender.Five: `20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:23856`
 - CryptoCrew: `c2c2fcb5e6e4755e06b83b499aff93e97282f8e8@tenderseed.ccvalidators.com:26401`
 - Crosnest: `4f20c3e303c9515051b6276aeb89c0b88ee79f8f@seed.dydx.cros-nest.com:26656`
+- DSRV: `a9cae4047d5c34772442322b10ef5600d8e54900@dydx-mainnet-seednode.allthatnode.com:26656`
 
 ### Chain info
 ```
