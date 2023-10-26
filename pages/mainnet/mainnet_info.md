@@ -18,7 +18,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 
 
 ### Indexer endpoints
-> :warning: **WARNING:** These endpoints will be with limited functionality during the Alpha phase of dYdX Chain.
+> ⚠️ These endpoints will be with limited functionality during the Alpha phase of dYdX Chain.
 
 | Type  | URI                              |
 |-------|----------------------------------|
