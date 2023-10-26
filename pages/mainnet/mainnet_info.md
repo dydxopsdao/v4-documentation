@@ -17,23 +17,6 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Luganodes      | `802607c6db8148b0c68c8a9ec1a86fd3ba606af6@64.227.38.88:26656`                         |
 
 
-### RPC endpoints
-| Type  | URI                                                                                       |
-|-------|-------------------------------------------------------------------------------------------|
-| RPC   | `https://dydx-dao-rpc-1.polkachu.com` <br> `https://dydx-dao-rpc-2.polkachu.com` <br> `https://dydx-dao-rpc-3.polkachu.com` <br> `https://dydx-dao-rpc-4.polkachu.com` <br> `https://dydx-dao-rpc-5.polkachu.com` <br> `https://dydx-mainnet-full-rpc.public.blastapi.io` <br> `https://dydx-ops-rpc.kingnodes.com` |
-| REST  | `https://dydx-dao-api-1.polkachu.com` <br> `https://dydx-dao-api-2.polkachu.com` <br> `https://dydx-dao-api-3.polkachu.com` <br> `https://dydx-dao-api-4.polkachu.com` <br> `https://dydx-dao-api-5.polkachu.com` <br> `https://dydx-mainnet-full-lcd.public.blastapi.io` <br> `https://dydx-ops-rest.kingnodes.com` |
-| gRPC  | `dydx-dao-grpc-1.polkachu.com:23890` <br> `dydx-dao-grpc-2.polkachu.com:23890` <br> `dydx-dao-grpc-3.polkachu.com:23890` <br> `dydx-dao-grpc-4.polkachu.com:23890` <br> `dydx-dao-grpc-5.polkachu.com:23890` <br> `dydx-mainnet-full-grpc.public.blastapi.io:443` <br> `https://dydx-ops-grpc.kingnodes.com` |
-
-
-
-
-### Archival nodes endpoints
-| Type  | URI                                                                                       |
-|-------|-------------------------------------------------------------------------------------------|
-| RPC   | `https://dydx-dao-archive-rpc-1.polkachu.com` <br> `https://dydx-dao-archive-rpc-2.polkachu.com` <br> `https://dydx-mainnet-archive-rpc.public.blastapi.io` <br> `https://dydx-ops-archive-rpc.kingnodes.com` |
-| REST  | `https://dydx-dao-archive-api-1.polkachu.com` <br> `https://dydx-dao-archive-api-2.polkachu.com` <br> `https://dydx-mainnet-archive-lcd.public.blastapi.io` <br> `https://dydx-ops-archive-rest.kingnodes.com` |
-| gRPC  | `dydx-dao-archive-grpc-1.polkachu.com:23890` <br> `dydx-dao-archive-grpc-2.polkachu.com:23890` <br> `dydx-mainnet-archive-grpc.public.blastapi.io:443` <br> `https://dydx-ops-archive-grpc.kingnodes.com` |
-
 ### Indexer endpoints
 > :warning: **WARNING:** These endpoints will be with limited functionality during the Alpha phase of dYdX Chain.
 
@@ -42,6 +25,21 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | API   | `https://indexer.dydx.trade/v4`  |
 | WS    | `wss://indexer.dydx.trade/v4/ws` |
 
+
+### RPC endpoints
+| Type  | URI                                                                                       |
+|-------|-------------------------------------------------------------------------------------------|
+| RPC   | `https://dydx-dao-rpc-1.polkachu.com` <br> `https://dydx-dao-rpc-2.polkachu.com` <br> `https://dydx-dao-rpc-3.polkachu.com` <br> `https://dydx-dao-rpc-4.polkachu.com` <br> `https://dydx-dao-rpc-5.polkachu.com` <br> `https://dydx-mainnet-full-rpc.public.blastapi.io` <br> `https://dydx-ops-rpc.kingnodes.com` |
+| REST  | `https://dydx-dao-api-1.polkachu.com` <br> `https://dydx-dao-api-2.polkachu.com` <br> `https://dydx-dao-api-3.polkachu.com` <br> `https://dydx-dao-api-4.polkachu.com` <br> `https://dydx-dao-api-5.polkachu.com` <br> `https://dydx-mainnet-full-lcd.public.blastapi.io` <br> `https://dydx-ops-rest.kingnodes.com` |
+| gRPC  | `dydx-dao-grpc-1.polkachu.com:23890` <br> `dydx-dao-grpc-2.polkachu.com:23890` <br> `dydx-dao-grpc-3.polkachu.com:23890` <br> `dydx-dao-grpc-4.polkachu.com:23890` <br> `dydx-dao-grpc-5.polkachu.com:23890` <br> `dydx-mainnet-full-grpc.public.blastapi.io:443` <br> `https://dydx-ops-grpc.kingnodes.com` |
+
+
+### Archival nodes endpoints
+| Type  | URI                                                                                       |
+|-------|-------------------------------------------------------------------------------------------|
+| RPC   | `https://dydx-dao-archive-rpc-1.polkachu.com` <br> `https://dydx-dao-archive-rpc-2.polkachu.com` <br> `https://dydx-mainnet-archive-rpc.public.blastapi.io` <br> `https://dydx-ops-archive-rpc.kingnodes.com` |
+| REST  | `https://dydx-dao-archive-api-1.polkachu.com` <br> `https://dydx-dao-archive-api-2.polkachu.com` <br> `https://dydx-mainnet-archive-lcd.public.blastapi.io` <br> `https://dydx-ops-archive-rest.kingnodes.com` |
+| gRPC  | `dydx-dao-archive-grpc-1.polkachu.com:23890` <br> `dydx-dao-archive-grpc-2.polkachu.com:23890` <br> `dydx-mainnet-archive-grpc.public.blastapi.io:443` <br> `https://dydx-ops-archive-grpc.kingnodes.com` |
 
 ### Chain info
 ```
