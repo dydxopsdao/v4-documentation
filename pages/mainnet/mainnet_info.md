@@ -27,10 +27,10 @@ The above info can be found in this [`networks` repository](https://github.com/d
 
 
 ### StateSync/Snapshots
-| Type      | URI                                                 |
-|-----------|-----------------------------------------------------|
-| StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com`  |
-| Snapshots | `https://bwarelabs.com/snapshots/dydx`              |
+| Type      | URI                                                    |
+|-----------|--------------------------------------------------------|
+| StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com` <br> `https://polkachu.com/state_sync/dydx` |
+| Snapshots | `https://bwarelabs.com/snapshots/dydx` <br> `https://polkachu.com/tendermint_snapshots/dydx` |
 
 
 ### RPC endpoints
