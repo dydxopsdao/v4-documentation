@@ -21,11 +21,18 @@
 - Governance
 - Security
 
+**[Mintscan](https://www.mintscan.io/dydx)**
+
+**[NodeStake](https://explorer.nodestake.top/dydx)**
+
+**[Cosmos.Directory](https://cosmos.directory/dydx)**
+
+**[Restake](https://restake.app/dydx)**
+
+**[Validator Metrics](https://p.ap1.datadoghq.com/sb/610e1836-51dd-11ee-a995-da7ad0900009-226f2d08f84e192e7d174a7595069b00?refresh_mode=sliding&tpl_var_ecs_cluster%5B0%5D=%2A&tpl_var_env%5B0%5D=mainnet&from_ts=1698338475579&to_ts=1698342075579&live=true)**
 
 
-
-[//]: # (TODO: Block Explorers: Mintscan, Keplr, etc.)
+[//]: # (TODO: Keplr)
 [//]: # (TODO: Discord Channels)
-[//]: # (TODO: Snapshot Locations)
 [//]: # (TODO: Various dashboards)
 
