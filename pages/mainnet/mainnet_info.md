@@ -26,6 +26,13 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | WS    | `wss://indexer.dydx.trade/v4/ws` |
 
 
+### StateSync/Snapshots
+| Type      | URI                                                 |
+|-----------|-----------------------------------------------------|
+| StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com`  |
+| Snapshots | `https://bwarelabs.com/snapshots/dydx`              |
+
+
 ### RPC endpoints
 | Type  | URI                                                                                       |
 |-------|-------------------------------------------------------------------------------------------|
