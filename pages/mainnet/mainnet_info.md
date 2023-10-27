@@ -29,16 +29,16 @@ The above info can be found in this [`networks` repository](https://github.com/d
 ### StateSync/Snapshots
 | Type      | URI                                                    |
 |-----------|--------------------------------------------------------|
-| StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com` <br> `https://polkachu.com/state_sync/dydx` |
-| Snapshots | `https://bwarelabs.com/snapshots/dydx` <br> `https://polkachu.com/tendermint_snapshots/dydx` |
+| StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com` <br> `https://polkachu.com/state_sync/dydx` <br> `https://services.lavenderfive.com/mainnet/dydx/statesync` |
+| Snapshots | `https://services.lavenderfive.com/mainnet/dydx/snapshot` <br> `https://bwarelabs.com/snapshots/dydx` <br> `https://polkachu.com/tendermint_snapshots/dydx` |
 
 
 ### RPC endpoints
 | Type  | URI                                                                                       |
 |-------|-------------------------------------------------------------------------------------------|
-| RPC   | `https://dydx-dao-rpc-1.polkachu.com` <br> `https://dydx-dao-rpc-2.polkachu.com` <br> `https://dydx-dao-rpc-3.polkachu.com` <br> `https://dydx-dao-rpc-4.polkachu.com` <br> `https://dydx-dao-rpc-5.polkachu.com` <br> `https://dydx-mainnet-full-rpc.public.blastapi.io` <br> `https://dydx-ops-rpc.kingnodes.com` |
-| REST  | `https://dydx-dao-api-1.polkachu.com` <br> `https://dydx-dao-api-2.polkachu.com` <br> `https://dydx-dao-api-3.polkachu.com` <br> `https://dydx-dao-api-4.polkachu.com` <br> `https://dydx-dao-api-5.polkachu.com` <br> `https://dydx-mainnet-full-lcd.public.blastapi.io` <br> `https://dydx-ops-rest.kingnodes.com` |
-| gRPC  | `dydx-dao-grpc-1.polkachu.com:23890` <br> `dydx-dao-grpc-2.polkachu.com:23890` <br> `dydx-dao-grpc-3.polkachu.com:23890` <br> `dydx-dao-grpc-4.polkachu.com:23890` <br> `dydx-dao-grpc-5.polkachu.com:23890` <br> `dydx-mainnet-full-grpc.public.blastapi.io:443` <br> `https://dydx-ops-grpc.kingnodes.com` |
+| RPC   | `https://dydx-rpc.lavenderfive.com` <br> `https://dydx-dao-rpc-1.polkachu.com` <br> `https://dydx-dao-rpc-2.polkachu.com` <br> `https://dydx-dao-rpc-3.polkachu.com` <br> `https://dydx-dao-rpc-4.polkachu.com` <br> `https://dydx-dao-rpc-5.polkachu.com` <br> `https://dydx-mainnet-full-rpc.public.blastapi.io` <br> `https://dydx-ops-rpc.kingnodes.com` |
+| REST  | `https://dydx-api.lavenderfive.com` <br> `https://dydx-dao-api-1.polkachu.com` <br> `https://dydx-dao-api-2.polkachu.com` <br> `https://dydx-dao-api-3.polkachu.com` <br> `https://dydx-dao-api-4.polkachu.com` <br> `https://dydx-dao-api-5.polkachu.com` <br> `https://dydx-mainnet-full-lcd.public.blastapi.io` <br> `https://dydx-ops-rest.kingnodes.com` |
+| gRPC  | `https://dydx-grpc.lavenderfive.com` <br> `dydx-dao-grpc-1.polkachu.com:23890` <br> `dydx-dao-grpc-2.polkachu.com:23890` <br> `dydx-dao-grpc-3.polkachu.com:23890` <br> `dydx-dao-grpc-4.polkachu.com:23890` <br> `dydx-dao-grpc-5.polkachu.com:23890` <br> `dydx-mainnet-full-grpc.public.blastapi.io:443` <br> `https://dydx-ops-grpc.kingnodes.com` |
 
 
 ### Archival nodes endpoints
