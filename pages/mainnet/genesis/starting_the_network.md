@@ -126,7 +126,7 @@ of the following flags: `--grpc.enable`, `--grpc.address`.
 
 For the chain to process bridge transactions from Ethereum, Ethereum testnet, or other chain that supports the `eth_getLogs` RPC method, the bridge daemon queries an RPC endpoint for logs emitted by the bridge contract. By default, a node will use a public testnet endpoint that may have rate-limiting, low reliability, or other restricted functionality.
 
-For your node to successfully ingest bridge transactions from the relevant blockchain, you should use your own private RPC endpoint and override the default by adding flag `--bridge-daemon-eth-rpc-endpoint <YOUR_PRIVATE_RPC_ENDPOINT>` to the command you run when starting the node.
+For your node to successfully ingest bridge transactions from the relevant blockchain, you are required to specify your own private RPC endpoint with flag `--bridge-daemon-eth-rpc-endpoint <YOUR_PRIVATE_RPC_ENDPOINT>` in the command you run when starting the node.
 
 💡IMPORTANT💡:The RPC endpoint you choose *MUST* satisfy the following requirements
 * supports `eth_chainId` method
@@ -142,7 +142,7 @@ For your node to successfully ingest bridge transactions from the relevant block
 Run `dydxprotocold` and connect to the seed node. The seed node info can be found in [Mainnet Info](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info):
 
 ```bash
-dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol
+dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol --bridge-daemon-eth-rpc-endpoint="<eth rpc endpoint>"
 ```
 
 ### Option 2: Run `dydxprotocold` with `cosmovisor`
@@ -167,7 +167,7 @@ version: 1.0.0
 Run `dydxprotocold` with `cosmovisor` and connect to the seed node. 
 
 ```bash
-cosmovisor run start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol
+cosmovisor run start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol --bridge-daemon-eth-rpc-endpoint="<eth rpc endpoint>"
 ```
 
 ### Announcing yourself and cooperating with others
