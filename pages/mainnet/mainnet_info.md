@@ -15,6 +15,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Crosnest       | `4f20c3e303c9515051b6276aeb89c0b88ee79f8f@seed.dydx.cros-nest.com:26656`              |
 | DSRV           | `a9cae4047d5c34772442322b10ef5600d8e54900@dydx-mainnet-seednode.allthatnode.com:26656`|
 | Luganodes      | `802607c6db8148b0c68c8a9ec1a86fd3ba606af6@64.227.38.88:26656`                         |
+| kjnodes        | `400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@dydx.rpc.kjnodes.com:17059`                 |
 
 
 ### Indexer endpoints
@@ -29,16 +30,16 @@ The above info can be found in this [`networks` repository](https://github.com/d
 ### StateSync/Snapshots
 | Type      | URI                                                    |
 |-----------|--------------------------------------------------------|
-| StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com` <br> `https://polkachu.com/state_sync/dydx` <br> `https://services.lavenderfive.com/mainnet/dydx/statesync` |
-| Snapshots | `https://services.lavenderfive.com/mainnet/dydx/snapshot` <br> `https://bwarelabs.com/snapshots/dydx` <br> `https://polkachu.com/tendermint_snapshots/dydx` |
+| StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com` <br> `https://polkachu.com/state_sync/dydx` <br> `https://services.lavenderfive.com/mainnet/dydx/statesync` <br> `https://services.kjnodes.com/mainnet/dydx/state-sync` |
+| Snapshots | `https://services.lavenderfive.com/mainnet/dydx/snapshot` <br> `https://bwarelabs.com/snapshots/dydx` <br> `https://polkachu.com/tendermint_snapshots/dydx` <br> `https://services.kjnodes.com/mainnet/dydx/snapshot` |
 
 
 ### RPC endpoints
 | Type  | URI                                                                                       |
 |-------|-------------------------------------------------------------------------------------------|
-| RPC   | `https://dydx-rpc.lavenderfive.com` <br> `https://dydx-dao-rpc-1.polkachu.com` <br> `https://dydx-dao-rpc-2.polkachu.com` <br> `https://dydx-dao-rpc-3.polkachu.com` <br> `https://dydx-dao-rpc-4.polkachu.com` <br> `https://dydx-dao-rpc-5.polkachu.com` <br> `https://dydx-mainnet-full-rpc.public.blastapi.io` <br> `https://dydx-ops-rpc.kingnodes.com` |
-| REST  | `https://dydx-api.lavenderfive.com` <br> `https://dydx-dao-api-1.polkachu.com` <br> `https://dydx-dao-api-2.polkachu.com` <br> `https://dydx-dao-api-3.polkachu.com` <br> `https://dydx-dao-api-4.polkachu.com` <br> `https://dydx-dao-api-5.polkachu.com` <br> `https://dydx-mainnet-full-lcd.public.blastapi.io` <br> `https://dydx-ops-rest.kingnodes.com` |
-| gRPC  | `https://dydx-grpc.lavenderfive.com` <br> `dydx-dao-grpc-1.polkachu.com:23890` <br> `dydx-dao-grpc-2.polkachu.com:23890` <br> `dydx-dao-grpc-3.polkachu.com:23890` <br> `dydx-dao-grpc-4.polkachu.com:23890` <br> `dydx-dao-grpc-5.polkachu.com:23890` <br> `dydx-mainnet-full-grpc.public.blastapi.io:443` <br> `https://dydx-ops-grpc.kingnodes.com` |
+| RPC   | `https://dydx-rpc.lavenderfive.com` <br> `https://dydx-dao-rpc-1.polkachu.com` <br> `https://dydx-dao-rpc-2.polkachu.com` <br> `https://dydx-dao-rpc-3.polkachu.com` <br> `https://dydx-dao-rpc-4.polkachu.com` <br> `https://dydx-dao-rpc-5.polkachu.com` <br> `https://dydx-mainnet-full-rpc.public.blastapi.io` <br> `https://dydx-ops-rpc.kingnodes.com` <br> `https://dydx.rpc.kjnodes.com` |
+| REST  | `https://dydx-api.lavenderfive.com` <br> `https://dydx-dao-api-1.polkachu.com` <br> `https://dydx-dao-api-2.polkachu.com` <br> `https://dydx-dao-api-3.polkachu.com` <br> `https://dydx-dao-api-4.polkachu.com` <br> `https://dydx-dao-api-5.polkachu.com` <br> `https://dydx-mainnet-full-lcd.public.blastapi.io` <br> `https://dydx-ops-rest.kingnodes.com` <br> `https://dydx.api.kjnodes.com` |
+| gRPC  | `https://dydx-grpc.lavenderfive.com` <br> `dydx-dao-grpc-1.polkachu.com:23890` <br> `dydx-dao-grpc-2.polkachu.com:23890` <br> `dydx-dao-grpc-3.polkachu.com:23890` <br> `dydx-dao-grpc-4.polkachu.com:23890` <br> `dydx-dao-grpc-5.polkachu.com:23890` <br> `dydx-mainnet-full-grpc.public.blastapi.io:443` <br> `https://dydx-ops-grpc.kingnodes.com` <br> `dydx.grpc.kjnodes.com:443` |
 
 
 ### Archival nodes endpoints
