@@ -15,7 +15,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Crosnest       | `4f20c3e303c9515051b6276aeb89c0b88ee79f8f@seed.dydx.cros-nest.com:26656`              |
 | DSRV           | `a9cae4047d5c34772442322b10ef5600d8e54900@dydx-mainnet-seednode.allthatnode.com:26656`|
 | Luganodes      | `802607c6db8148b0c68c8a9ec1a86fd3ba606af6@64.227.38.88:26656`                         |
-| NodeStake      | `4c30c8a95e26b07b249813b677caab28bf0c54eb@rpc.dydx.nodestake.top:666`                         |
+| NodeStake      | `4c30c8a95e26b07b249813b677caab28bf0c54eb@rpc.dydx.nodestake.top:666`                 |
 
 
 ### Indexer endpoints
