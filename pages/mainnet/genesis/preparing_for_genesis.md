@@ -1,6 +1,6 @@
 # Preparing for Genesis
 
-***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Operations Services Ltd. ("dYdX Operations subDAO") database, you hereby and thereby agree to the [dYdX Chain Docs Terms of Use](https://dydx-chain-docs.vercel.app/general/terms_of_use) governing such information, and you agree that such action establishes a binding agreement between you and dYdX Operations subDAO.***
+***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Operations Services Ltd. ("dYdX Operations subDAO") database, you hereby and thereby agree to the [dYdX Chain Docs Terms of Use](https://docs.dydx.trade/general/terms_of_use) governing such information, and you agree that such action establishes a binding agreement between you and dYdX Operations subDAO.***
 
 
 ## Goals
@@ -16,7 +16,7 @@ These are necessary steps to register your validator in the genesis and prepare 
 
 ## Timeline
 
-See the [Mainnet Launch Schedule](https://dydx-chain-docs.vercel.app/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to prepare your `DYDX` tokens for self-delegation, and submit your gentx by the deadlines highlighted in the schedule.
+See the [Mainnet Launch Schedule](https://docs.dydx.trade/mainnet/schedule) for `dydx-mainnet-1`. Please make sure to prepare your `DYDX` tokens for self-delegation, and submit your gentx by the deadlines highlighted in the schedule.
 
 ## Preparing `DYDX` for self-delegation
 

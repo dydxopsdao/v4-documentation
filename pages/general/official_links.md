@@ -1,7 +1,7 @@
 # dYdX Chain Mainnet Resources
 
 **dYdX Chain Mainnet Documentation:**\
-[https://dydx-chain-docs.vercel.app/](https://dydx-chain-docs.vercel.app/)
+[https://docs.dydx.trade/](https://docs.dydx.trade/)
 
 **dYdX Chain web frontend (soon):**\
 [https://dydx.trade/](https://dydx.trade/)

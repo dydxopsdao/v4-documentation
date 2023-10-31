@@ -1,15 +1,15 @@
 # Starting the network
 
-***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Operations Services Ltd. ("dYdX Operations subDAO") database, you hereby and thereby agree to the [dYdX Chain Docs Terms of Use](https://dydx-chain-docs.vercel.app/general/terms_of_use) governing such information, and you agree that such action establishes a binding agreement between you and dYdX Operations subDAO.***
+***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Operations Services Ltd. ("dYdX Operations subDAO") database, you hereby and thereby agree to the [dYdX Chain Docs Terms of Use](https://docs.dydx.trade/general/terms_of_use) governing such information, and you agree that such action establishes a binding agreement between you and dYdX Operations subDAO.***
 
 ## Timeline
 
-See `dydx-mainnet-1` [Launch Schedule](https://dydx-chain-docs.vercel.app/mainnet/schedule). Please complete the following instructions by the scheduled time for `Network Launch`.
+See `dydx-mainnet-1` [Launch Schedule](https://docs.dydx.trade/mainnet/schedule). Please complete the following instructions by the scheduled time for `Network Launch`.
 
 ## Getting Started
 
-This document assumes you've already [Prepared for Genesis](https://dydx-chain-docs.vercel.app/mainnet/genesis/preparing_for_genesis). 
-If you haven't, please complete the [Initialize Your Node](https://dydx-chain-docs.vercel.app/mainnet/genesis/preparing_for_genesis#initialize-your-node) step.
+This document assumes you've already [Prepared for Genesis](https://docs.dydx.trade/mainnet/genesis/preparing_for_genesis). 
+If you haven't, please complete the [Initialize Your Node](https://docs.dydx.trade/mainnet/genesis/preparing_for_genesis#initialize-your-node) step.
 
 ## Download `genesis.json`
 
@@ -78,7 +78,7 @@ timeout_commit = "500ms"
 
 Seed nodes are how the nodes within the network communicate. Adding them ensures nodes have healthy peers.
 
-You can find a list of seed nodes [here](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info)
+You can find a list of seed nodes [here](https://docs.dydx.trade/mainnet/mainnet_info)
 
 ```bash
 seeds="<comma separated seed nodes>"
@@ -139,7 +139,7 @@ For your node to successfully ingest bridge transactions from the relevant block
 
 ### Option 1: Run `dydxprotocold` Directly
 
-Run `dydxprotocold` and connect to the seed node. The seed node info can be found in [Mainnet Info](https://dydx-chain-docs.vercel.app/mainnet/mainnet_info):
+Run `dydxprotocold` and connect to the seed node. The seed node info can be found in [Mainnet Info](https://docs.dydx.trade/mainnet/mainnet_info):
 
 ```bash
 dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol --bridge-daemon-eth-rpc-endpoint="<eth rpc endpoint>"
@@ -147,7 +147,7 @@ dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dyd
 
 ### Option 2: Run `dydxprotocold` with `cosmovisor`
 
-Install and initialize `cosmovisor` with instructions [here](https://dydx-chain-docs.vercel.app/validators/cosmovisor). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
+Install and initialize `cosmovisor` with instructions [here](https://docs.dydx.trade/validators/cosmovisor). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
 
 ```bash
 cosmovisor run version --long
