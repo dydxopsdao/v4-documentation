@@ -1,7 +1,7 @@
 # dYdX Documentation Website Terms of Use
 
 ## Acceptance of the Terms of Use; Eligible Users
-These terms of use are entered into by and between you (as defined below) and dYdX Operations Services Limited (“Company”, “we” or “us”). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these “Terms of Use”), govern your access to and use of https://dydx-chain-docs.vercel.app (the “Website”). 
+These terms of use are entered into by and between you (as defined below) and dYdX Operations Services Limited (“Company”, “we” or “us”). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, these “Terms of Use”), govern your access to and use of https://docs.dydx.trade (the “Website”). 
 
 If the user engages with the Website under authority from a different party or on another party’s behalf, then “you” (and its variants, including “your,” “yours,” etc.) as used herein refers to that person on whose behalf the Website is used (e.g., an employer). If the person engaging with our Website is an individual, acting in their own individual capacity, then “you” (and its variants) refers to that individual. If you have anyone using the Website on your behalf, you agree that you are responsible for the actions and inactions of all such persons, as they were your own. 
 

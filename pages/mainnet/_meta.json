@@ -1,5 +1,7 @@
 {
-  "schedule": "Mainnet Schedule",
+  "validator_requirements": "Validator Requirements",
+  "running_full_node": "Running a full node",
   "mainnet_info": "Mainnet Info",
+  "schedule": "Mainnet Schedule",
   "genesis": "Genesis"
 }
