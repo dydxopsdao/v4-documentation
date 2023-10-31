@@ -2,5 +2,6 @@
   "validator_requirements": "Validator Requirements",
   "schedule": "Mainnet Schedule",
   "mainnet_info": "Mainnet Info",
+  "running_full_node": "Running a full node",
   "genesis": "Genesis"
 }
