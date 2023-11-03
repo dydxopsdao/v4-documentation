@@ -31,7 +31,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | WS    | `wss://indexer.dydx.trade/v4/ws` |
 
 
-## StateSync/Snapshots
+## Snapshot service
 | Type      | URI                                                    |
 |-----------|--------------------------------------------------------|
 | StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com` <br> `https://polkachu.com/state_sync/dydx` <br> `https://services.lavenderfive.com/mainnet/dydx/statesync` <br> `https://services.kjnodes.com/mainnet/dydx/state-sync` <br> `https://nodestake.top/dydx` <br> `https://autostake.com/networks/dydx/#services` |
