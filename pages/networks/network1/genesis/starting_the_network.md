@@ -69,7 +69,7 @@ timeout_commit = "500ms"
 
 Seed nodes are how the nodes within the network communicate. Adding them ensures nodes have healthy peers.
 
-You can find a list of seed nodes [here](https://docs.dydx.trade/mainnet/mainnet_info)
+You can find a list of seed nodes [here](../resources#seed-nodes)
 
 ```bash
 seeds="<comma separated seed nodes>"
@@ -130,7 +130,7 @@ For your node to successfully ingest bridge transactions from the relevant block
 
 ### Option 1: Run `dydxprotocold` Directly
 
-Run `dydxprotocold` and connect to the seed node. The seed node info can be found in [Mainnet Info](https://docs.dydx.trade/mainnet/mainnet_info):
+Run `dydxprotocold` and connect to the seed node. The seed node info can be found in [Mainnet Info](../resources#seed-nodes):
 
 ```bash
 dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol --bridge-daemon-eth-rpc-endpoint="<eth rpc endpoint>"
@@ -138,7 +138,7 @@ dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dyd
 
 ### Option 2: Run `dydxprotocold` with `cosmovisor`
 
-Install and initialize `cosmovisor` with instructions [here](https://docs.dydx.trade/validators/cosmovisor). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
+Install and initialize `cosmovisor` with instructions [here](../../../validators/cosmovisor.mdr). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
 
 ```bash
 cosmovisor run version --long
