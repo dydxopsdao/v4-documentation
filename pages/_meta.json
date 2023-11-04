@@ -1,9 +1,15 @@
 {
   "index": "Introduction",
-  "general": "General",
-  "mainnet": "Mainnet",
+  "validators": "Validators",
+  "networks": "Networks",
+  "trading": "Trading",
+  "developers": "Developers",
+  "operators": "Operators",
+  "governance": "Governance",
+  "security": "Security",
+  "terms_and_policies": "Terms and Policies",
   "app": {
-    "title": "dYdX Chain Mainnet",
+    "title": "dYdX Chain ↗",
     "type": "page",
     "href": "https://dydx.trade",
     "newWindow": true

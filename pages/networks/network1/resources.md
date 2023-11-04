@@ -1,10 +1,12 @@
-## Mainnet
+# Resources
+
+## `networks` repository and `genesis.json`
 
 To join the mainnet network, you need to run the correct binary version and specify the correct `genesis.json` as well as the `seed node` info.
 
 The above info can be found in this [`networks` repository](https://github.com/dydxopsdao/networks).
 
-### Seed nodes
+## Seed nodes
 | Team           |  URI                                                                                  |
 |----------------|---------------------------------------------------------------------------------------|
 | Polkachu       | `ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:23856`                   |
@@ -20,7 +22,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | AutoStake      | `ebc272824924ea1a27ea3183dd0b9ba713494f83@dydx-mainnet-seed.autostake.com:27366`      |
 
 
-### Indexer endpoints
+## Indexer endpoints
 > ⚠️ These endpoints will be with limited functionality during the Alpha phase of dYdX Chain.
 
 | Type  | URI                              |
@@ -29,14 +31,14 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | WS    | `wss://indexer.dydx.trade/v4/ws` |
 
 
-### StateSync/Snapshots
+## Snapshot service
 | Type      | URI                                                    |
 |-----------|--------------------------------------------------------|
 | StateSync | `https://dydx-mainnet-statesync-rpc.bwarelabs.com` <br> `https://polkachu.com/state_sync/dydx` <br> `https://services.lavenderfive.com/mainnet/dydx/statesync` <br> `https://services.kjnodes.com/mainnet/dydx/state-sync` <br> `https://nodestake.top/dydx` <br> `https://autostake.com/networks/dydx/#services` |
 | Snapshots | `https://bwarelabs.com/snapshots/dydx` <br> `https://polkachu.com/tendermint_snapshots/dydx` <br> `https://services.lavenderfive.com/mainnet/dydx/snapshot` <br> `https://services.kjnodes.com/mainnet/dydx/snapshot` <br> `https://nodestake.top/dydx`  <br> `https://autostake.com/networks/dydx/#services` |
 
 
-### RPC endpoints
+## RPC endpoints
 | Type  | URI                                                                                       |
 |-------|-------------------------------------------------------------------------------------------|
 | RPC   | `https://dydx-dao-rpc.polkachu.com` <br> `https://dydx-mainnet-full-rpc.public.blastapi.io` <br> `https://dydx-ops-rpc.kingnodes.com` <br> `https://dydx-rpc.lavenderfive.com` <br> `https://dydx.rpc.kjnodes.com` <br> `https://rpc.dydx.nodestake.top` <br> `https://dydx-mainnet-rpc.autostake.com:443` |
@@ -44,61 +46,37 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | gRPC  | `dydx-dao-grpc-1.polkachu.com:23890` <br> `dydx-dao-grpc-2.polkachu.com:23890` <br> `dydx-dao-grpc-3.polkachu.com:23890` <br> `dydx-dao-grpc-4.polkachu.com:23890` <br> `dydx-dao-grpc-5.polkachu.com:23890` <br> `dydx-mainnet-full-grpc.public.blastapi.io:443` <br> `https://dydx-ops-grpc.kingnodes.com` <br> `https://dydx-grpc.lavenderfive.com` <br> `dydx.grpc.kjnodes.com:443` <br> `https://grpc.dydx.nodestake.top` <br> `dydx-mainnet-grpc.autostake.com:443` |
 
 
-### Archival nodes endpoints
+## Archival nodes endpoints
 | Type  | URI                                                                                       |
 |-------|-------------------------------------------------------------------------------------------|
 | RPC   | `https://dydx-dao-archive-rpc.polkachu.com` <br> `https://dydx-mainnet-archive-rpc.public.blastapi.io` <br> `https://dydx-ops-archive-rpc.kingnodes.com` |
 | REST  | `https://dydx-dao-archive-api.polkachu.com` <br> `https://dydx-mainnet-archive-lcd.public.blastapi.io` <br> `https://dydx-ops-archive-rest.kingnodes.com` |
 | gRPC  | `dydx-dao-archive-grpc-1.polkachu.com:23890` <br> `dydx-dao-archive-grpc-2.polkachu.com:23890` <br> `dydx-mainnet-archive-grpc.public.blastapi.io:443` <br> `https://dydx-ops-archive-grpc.kingnodes.com` |
 
-### Chain info
-```
-{
-  "rpc": "https://dydx-dao-rpc.polkachu.com:26657",
-  "rest": "https://dydx-dao-api.polkachu.com",
-  "chainId": "dydx-mainnet-1",
-  "chainName": "dYdX Chain",
-  "chainSymbolImageUrl": "https://raw.githubusercontent.com/cosmos/chain-registry/master/dydx/images/dydx.png",
-  "bech32Config": {
-    "bech32PrefixAccPub": "dydxpub",
-    "bech32PrefixValPub": "dydxvaloperpub",
-    "bech32PrefixAccAddr": "dydx",
-    "bech32PrefixConsPub": "dydxvalconspub",
-    "bech32PrefixValAddr": "dydxvaloper",
-    "bech32PrefixConsAddr": "dydxvalcons"
-  },
-  "bip44": {
-    "coinType": 118
-  },
-  "stakeCurrency": {
-    "coinDenom": "DYDX",
-    "coinDecimals": 18,
-    "coinMinimalDenom": "adydx",
-  },
-  "currencies": [
-    {
-      "coinDenom": "DYDX",
-      "coinDecimals": 18,
-      "coinMinimalDenom": "adydx",
-    },
-    {
-      "coinDenom": "USDC",
-      "coinDecimals": 6,
-      "coinMinimalDenom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
-    }
-  ],
-  "feeCurrencies": [
-    {
-      "coinDenom": "DYDX",
-      "coinDecimals": 18,
-      "coinMinimalDenom": "adydx",
-    },
-    {
-      "coinDenom": "USDC",
-      "coinDecimals": 6,
-      "coinMinimalDenom": "ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5",
-    }
-  ],
-  "features": []
-}
-```
+## Other Links
+
+**DYDX Migration/Bridge UI:**\
+[https://bridge.dydx.trade/](https://bridge.dydx.trade/)
+
+**dYdX Chain web frontend (soon):**\
+[https://dydx.trade/](https://dydx.trade/)
+
+**Mainnet Status Page:**\
+[https://status.dydx.trade](https://status.dydx.trade)
+
+**[Mintscan](https://www.mintscan.io/dydx)**
+
+**[Keplr](https://wallet.keplr.app/chains/dydx)**
+
+**[NodeStake](https://explorer.nodestake.top/dydx)**
+
+**[Cosmos.Directory](https://cosmos.directory/dydx)**
+
+**[Restake](https://restake.app/dydx)**
+
+**[Validator Metrics](https://p.ap1.datadoghq.com/sb/610e1836-51dd-11ee-a995-da7ad0900009-226f2d08f84e192e7d174a7595069b00?refresh_mode=sliding&tpl_var_ecs_cluster%5B0%5D=%2A&tpl_var_env%5B0%5D=mainnet&from_ts=1698338475579&to_ts=1698342075579&live=true)**
+
+**[#validators Discord Channel](https://discord.com/channels/724804754382782534/1029585380170805379)**
+
+**Public Testnet Documentation:**\
+[https://v4-teacher.vercel.app](https://t.co/tKTUWacKld)
