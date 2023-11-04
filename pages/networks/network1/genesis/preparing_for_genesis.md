@@ -70,7 +70,7 @@ go run scripts/bridge_events/bridge_events.go \
 
 In case you would like to experiment with bridging on Sepolia first, you can use [testTOKEN](https://sepolia.etherscan.io/token/0x6D5Bb505A4f85C10B122cCC36E30F57E2B86A291) and [wrappedTestToken](https://sepolia.etherscan.io/address/0xcca9D5f0a3c58b6f02BD0985fC7F9420EA24C1f0).
 
-## Get the `dydxprotocold` binary
+## Get the Latest `dydxprotocold` Binary
 
 Download the latest binaries from [dYdX Protocol Github Repo](https://github.com/dydxprotocol/v4-chain/releases).
 
@@ -227,7 +227,7 @@ git clone https://github.com/<your username or organization>/networks.git
 git checkout -b $DYDX_MONIKER/gentx
 ```
 
-4. Copy the gentx file to the `networks` repo (ensure that it is in the correct folder)
+4. Copy the gentx file to the forked `networks` repo (ensure that it is in the correct folder)
 
 ```bash
 cp $HOME_MAINNET_1/config/gentx/gentx-xxxxxxxxxxxx.json v4-mainnets/dydx-mainnet-1/gentx/gentx-$DYDX_MONIKER.json
@@ -241,7 +241,7 @@ git commit -m "$DYDX_MONIKER gentx"
 git push origin $DYDX_MONIKER/gentx
 ```
 
-6. Create a pull request in the original `dydxopsdao/networks` repo. In other words, the `base repository` should be `dydxopsdao/networks` and the `base branch`` should be `main`. 
+6. Create a pull request in the original `dydxopsdao/networks` repo. In other words, the `base repository` should be `dydxopsdao/networks` and the `base` branch should be `main`. 
 
 7. The maintainers will run the "Validate Genesis" workflow, which runs some sanity checks on the submitted `gentx`. Please try to resolve any issue if the workflow doesn't pass, and post in `#ext-dydx-v4-validators-discussion` if you need help.
 

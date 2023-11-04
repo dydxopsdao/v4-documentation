@@ -2,9 +2,10 @@
 
 ***By using, recording, referencing, or downloading (i.e., any “action”) any information contained on this page or in any dYdX Operations Services Ltd. ("dYdX Operations subDAO") database, you hereby and thereby agree to the [dYdX Chain Docs Terms of Use](../../../terms_and_policies/terms_of_use) governing such information, and you agree that such action establishes a binding agreement between you and dYdX Operations subDAO.***
 
-## Download `genesis.json`
 
-After the `gentx` collection process is complete, the dYdX Operations subDAO team will announce in the `#ext-dydx-v4-validators-updates` channel that the finalized `genesis.json` file is ready for download. 
+## Downloading `genesis.json`
+
+After the `gentx` collection process is complete, the dYdX Operations subDAO team will announce in the `#ext-dydx-v4-validators-updates` channel that the finalized `genesis.json` file is ready for download.
 
 Download `genesis.json` file into `$HOME/.dydxprotocol`, replacing the previous `genesis.json` file:
 
@@ -34,7 +35,7 @@ tar -xvzf dydxprotocold-$BINARY_VERSION-${DYDX_PLATFORM}.tar.gz
 mkdir -p "${HOME}/local/bin"
 export PATH="${HOME}/local/bin:$PATH"
 cp build/dydxprotocold-$BINARY_VERSION-${DYDX_PLATFORM} "${HOME}/local/bin/dydxprotocold"
-rm -R build 
+rm -R build
 ```
 
 Check that the binary version is correct:
@@ -54,7 +55,9 @@ server_name: dydxprotocold
 version: 1.0.0
 ```
 
-## [💡💡💡IMPORTANT:💡💡💡] Verify Config 
+## [💡💡💡IMPORTANT:💡💡💡] Verify Config
+
+See [this requirement section](../../../validators/required_node_configs.md) to correctly configure the node.
 
 ### config.toml ###
 
@@ -113,16 +116,9 @@ address = "0.0.0.0:9090"
 **Note** that grpc can be also be configured via start flags. Be careful not to change the default settings with either
 of the following flags: `--grpc.enable`, `--grpc.address`.
 
-## [💡💡💡IMPORTANT:💡💡💡] Ethereum RPC Endpoint
+## [💡💡💡IMPORTANT:💡💡💡] Configure Ethereum RPC Endpoint
 
-For the chain to process bridge transactions from Ethereum, Ethereum testnet, or other chain that supports the `eth_getLogs` RPC method, the bridge daemon queries an RPC endpoint for logs emitted by the bridge contract. By default, a node will use a public testnet endpoint that may have rate-limiting, low reliability, or other restricted functionality.
-
-For your node to successfully ingest bridge transactions from the relevant blockchain, you are required to specify your own private RPC endpoint with flag `--bridge-daemon-eth-rpc-endpoint <YOUR_PRIVATE_RPC_ENDPOINT>` in the command you run when starting the node.
-
-💡IMPORTANT💡:The RPC endpoint you choose *MUST* satisfy the following requirements
-* supports `eth_chainId` method
-* supports `eth_getLogs` method
-    * supports `"finalized"` as an input to `toBlock` parameter (for example Alchemy supports this while Blast doesn't)
+See [this requirement section](../../../validators/required_node_configs.md#ethereum-rpc-endpoint) to correctly configure the Ethereum RPC endpoint.
 
 ## Starting the Node
 
@@ -138,7 +134,7 @@ dydxprotocold start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dyd
 
 ### Option 2: Run `dydxprotocold` with `cosmovisor`
 
-Install and initialize `cosmovisor` with instructions [here](../../../validators/cosmovisor). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
+Install and initialize `cosmovisor` with instructions [here](../../../validators/cosmovisor.md). To make sure `cosmovisor` is initialized with the correct binary, run the following to binary version:
 
 ```bash
 cosmovisor run version --long
@@ -155,7 +151,7 @@ server_name: dydxprotocold
 version: 1.0.0
 ```
 
-Run `dydxprotocold` with `cosmovisor` and connect to the seed node. 
+Run `dydxprotocold` with `cosmovisor` and connect to the seed node.
 
 ```bash
 cosmovisor run start --p2p.seeds="<comma separated seed nodes>" --home $HOME/.dydxprotocol --bridge-daemon-eth-rpc-endpoint="<eth rpc endpoint>"
@@ -191,7 +187,7 @@ If you see `This node is not a validator` instead, please let us know.
 You should also see that the binary is sleeping until genesis time:
 
 ```bash
-Genesis time is in the future. Sleeping until then... 
+Genesis time is in the future. Sleeping until then...
 ```
 
 While the binary is sleeping, some occasional errors from the price daemon are expected. If you see any critical error (e.g. the app is crashing), please let us know.
