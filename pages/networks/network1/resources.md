@@ -6,6 +6,7 @@ To join the mainnet network, you need to run the correct binary version and spec
 
 The above info can be found in this [`networks` repository](https://github.com/dydxopsdao/networks).
 
+
 ## Seed nodes
 | Team           |  URI                                                                                  |
 |----------------|---------------------------------------------------------------------------------------|
@@ -21,6 +22,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | NodeStake      | `4c30c8a95e26b07b249813b677caab28bf0c54eb@rpc.dydx.nodestake.top:666`                 |
 | AutoStake      | `ebc272824924ea1a27ea3183dd0b9ba713494f83@dydx-mainnet-seed.autostake.com:27366`      |
 | genznodes      | `09ba537d6563018b97c502979c3478df4decf426@dydxprotocol-seed.genznodes.dev:22656`      |
+
 
 ## Indexer endpoints
 > ⚠️ These endpoints will be with limited functionality during the Alpha phase of dYdX Chain.
@@ -52,6 +54,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | RPC   | `https://dydx-dao-archive-rpc.polkachu.com` <br> `https://dydx-mainnet-archive-rpc.public.blastapi.io` <br> `https://dydx-ops-archive-rpc.kingnodes.com` |
 | REST  | `https://dydx-dao-archive-api.polkachu.com` <br> `https://dydx-mainnet-archive-lcd.public.blastapi.io` <br> `https://dydx-ops-archive-rest.kingnodes.com` |
 | gRPC  | `dydx-dao-archive-grpc-1.polkachu.com:23890` <br> `dydx-dao-archive-grpc-2.polkachu.com:23890` <br> `dydx-mainnet-archive-grpc.public.blastapi.io:443` <br> `https://dydx-ops-archive-grpc.kingnodes.com` |
+
 
 ## Other Links
 
