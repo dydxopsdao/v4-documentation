@@ -1,4 +1,4 @@
-# dYdX Chian Mainnet documentation
+# dYdX Chain Mainnet documentation
 
 Welcome to the documentation page for dYdX Chain Mainnet, a robust blockchain built with the CosmosSDK. This documentation is diligently maintained by the dYdX Operations subDAO to provide a comprehensive resource for validators, developers, and the dYdX community at large.
 
