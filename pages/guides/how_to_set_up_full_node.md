@@ -30,8 +30,7 @@ to get the applicable Genesis state of the network.
  - https://dydx.rpc.kjnodes.com/genesis
  - https://rpc.dydx.nodestake.top/genesis
  - https://dydx-mainnet-rpc.autostake.com:443/genesis
- - https://dydxprotocol-rpc.genznodes.dev/genesis
- - Also check [RPC endpoints → RPC](../networks/network1/resources.md#rpc-endpoints)
+ - Also check [Full node endpoints → RPC](../networks/network1/resources.md#full-node-endpoints)
 
 ## Install Bware’s snapshot (optional but saves days)
 1. From https://bwarelabs.com/snapshots/dydx
