@@ -33,7 +33,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Team           | StateSync Peers                                                                       | Region |
 |----------------|---------------------------------------------------------------------------------------|--------|
 | KingNodes      | `f94dcfbccb9019584d1790562a020507b050d9ba@51.77.56.23:23856` <br> `6bc1068d9a257931083ddc75ad3b1003a46e5b0d@15.235.160.127:23856` | `EU_West` <br> `Asia_SE` |
-| Polkachu       |  |  |
+| Polkachu       | `580ec248de1f41d4e50abe132b7838348db55b80@176.9.144.40:23856` <br> `90b0ee8e73d8237b06356b244ff9854d1991a1f8@65.109.115.228:23856` <br> `874b5ab53d8f5edae6674ad394f20e2b297cf73f@199.254.199.182:23856` <br> `e3aa07f6f97fcccdf57b64aa5f4f11761df3852a@15.235.160.15:23856` <br> `a879fe2926c2b8f0d86e8e973210c30b8634abb4@15.235.204.159:23856` | `Germany` <br> `Finland` <br> `Japan` <br> `Singapore` <br> `Singapore` |
 | Bware Labs     |  |  |
 | Lavender.Five  |  |  |
 | NodeStake      |  |  |
@@ -43,7 +43,7 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Team           | URI                                                       | Pruning | Index |
 |----------------|-----------------------------------------------------------|---------|-------|
 | Bware Labs     | `https://bwarelabs.com/snapshots/dydx`                    | Yes     |       |
-| Polkachu       | `https://polkachu.com/tendermint_snapshots/dydx`          | Yes     |       |
+| Polkachu       | `https://polkachu.com/tendermint_snapshots/dydx`          | Yes     | null  |
 | KingNodes      | `https://dydx-archive-snapshot.kingnodes.com/`            | No      | kv    |
 | Lavender.Five  | `https://services.lavenderfive.com/mainnet/dydx/snapshot` | Yes     |       |
 | NodeStake      | `https://nodestake.top/dydx`                              | Yes     |       |
@@ -53,24 +53,24 @@ The above info can be found in this [`networks` repository](https://github.com/d
 ## Full node endpoints
 ### RPC
 | Team           | URI                                                       | Rate limit |
-|----------------|-----------------------------------------------------------|-------------|
-| Polkachu       | `https://dydx-dao-rpc.polkachu.com`                       |             |
-| Bware Labs     | `https://dydx-mainnet-full-rpc.public.blastapi.io`        |             |
-| KingNodes      | `https://dydx-ops-rpc.kingnodes.com`                      |             |
-| Lavender.Five  | `https://dydx-rpc.lavenderfive.com`                       |             |
-| NodeStake      | `https://rpc.dydx.nodestake.top`                          |             |
-| AutoStake      | `https://dydx-mainnet-rpc.autostake.com`                  |             |
-| EcoStake       | `https://rpc-dydx.ecostake.com`                           |             |
-| CosmosSpaces   | `https://rpc-dydx.cosmos-spaces.cloud`                    |             |
-| PublicNode     | `https://dydx-rpc.publicnode.com`                         |             |
-| Enigma         | `https://dydx-rpc.enigma-validator.com`                   |             |
+|----------------|-----------------------------------------------------------|------------|
+| Polkachu       | `https://dydx-dao-rpc.polkachu.com`                       | 300 req/m  |
+| Bware Labs     | `https://dydx-mainnet-full-rpc.public.blastapi.io`        |            |
+| KingNodes      | `https://dydx-ops-rpc.kingnodes.com`                      | 250 req/m  |
+| Lavender.Five  | `https://dydx-rpc.lavenderfive.com`                       |            |
+| NodeStake      | `https://rpc.dydx.nodestake.top`                          |            |
+| AutoStake      | `https://dydx-mainnet-rpc.autostake.com`                  |            |
+| EcoStake       | `https://rpc-dydx.ecostake.com`                           |            |
+| CosmosSpaces   | `https://rpc-dydx.cosmos-spaces.cloud`                    |            |
+| PublicNode     | `https://dydx-rpc.publicnode.com`                         |            |
+| Enigma         | `https://dydx-rpc.enigma-validator.com`                   |            |
 
 ### REST
 | Team           | URI                                                       | Rate limit |
 |----------------|-----------------------------------------------------------|------------|
-| Polkachu       | `https://dydx-dao-api.polkachu.com`                       |            |
+| Polkachu       | `https://dydx-dao-api.polkachu.com`                       | 300 req/m  |
 | Bware Labs     | `https://dydx-mainnet-full-lcd.public.blastapi.io`        |            |
-| KingNodes      | `https://dydx-ops-rest.kingnodes.com`                     |            |
+| KingNodes      | `https://dydx-ops-rest.kingnodes.com`                     | 250 req/m  |
 | Lavender.Five  | `https://dydx-api.lavenderfive.com`                       |            |
 | AutoStake      | `https://dydx-mainnet-lcd.autostake.com`                  |            |
 | EcoStake       | `https://rest-dydx.ecostake.com`                          |            |
@@ -83,9 +83,9 @@ The above info can be found in this [`networks` repository](https://github.com/d
 ### gRPC
 | Team           | URI                                                       | Rate limit |
 |----------------|-----------------------------------------------------------|------------|
-| Polkachu       | `http://dydx-dao-grpc-1.polkachu.com:23890` <br> `http://dydx-dao-grpc-2.polkachu.com:23890` <br> `http://dydx-dao-grpc-3.polkachu.com:23890` <br> `http://dydx-dao-grpc-4.polkachu.com:23890` <br> `http://dydx-dao-grpc-5.polkachu.com:23890`|            |
+| Polkachu       | `http://dydx-dao-grpc-1.polkachu.com:23890` <br> `http://dydx-dao-grpc-2.polkachu.com:23890` <br> `http://dydx-dao-grpc-3.polkachu.com:23890` <br> `http://dydx-dao-grpc-4.polkachu.com:23890` <br> `http://dydx-dao-grpc-5.polkachu.com:23890`| 300 req/m  |
 | Bware Labs     | `https://dydx-mainnet-full-grpc.public.blastapi.io:443`   |            |
-| KingNodes      | `https://dydx-ops-grpc.kingnodes.com:443`                 |            |
+| KingNodes      | `https://dydx-ops-grpc.kingnodes.com:443`                 | 250 req/m  |
 | Lavender.Five  | `https://dydx-grpc.lavenderfive.com:443`                  |            |
 | NodeStake      | `https://grpc.dydx.nodestake.top:443`                     |            |
 | AutoStake      | `https://dydx-mainnet-grpc.autostake.com:443`             |            |
@@ -96,23 +96,23 @@ The above info can be found in this [`networks` repository](https://github.com/d
 ### RPC
 | Team           | URI                                                       | Rate limit |
 |----------------|-----------------------------------------------------------|------------|
-| Polkachu       | `https://dydx-dao-archive-rpc.polkachu.com`               |            |
+| Polkachu       | `https://dydx-dao-archive-rpc.polkachu.com`               | 300 req/m  |
 | Bware Labs     | `https://dydx-mainnet-archive-rpc.public.blastapi.io`     |            |
-| KingNodes      | `https://dydx-ops-archive-rpc.kingnodes.com`              |            |
+| KingNodes      | `https://dydx-ops-archive-rpc.kingnodes.com`              | 50 req/m   |
 
 ### REST
 | Team           | URI                                                       | Rate limit |
 |----------------|-----------------------------------------------------------|------------|
-| Polkachu       | `https://dydx-dao-archive-api.polkachu.com`               |            |
+| Polkachu       | `https://dydx-dao-archive-api.polkachu.com`               | 300 req/m  |
 | Bware Labs     | `https://dydx-mainnet-archive-lcd.public.blastapi.io`     |            |
-| KingNodes      | `https://dydx-ops-archive-rest.kingnodes.com`             |            |
+| KingNodes      | `https://dydx-ops-archive-rest.kingnodes.com`             | 50 req/m   |
 
 ### gRPC
 | Team           | URI                                                       | Rate limit |
 |----------------|-----------------------------------------------------------|------------|
-| Polkachu       | `http://dydx-dao-archive-grpc-1.polkachu.com:23890` <br> `http://dydx-dao-archive-grpc-2.polkachu.com:23890` |            |
+| Polkachu       | `http://dydx-dao-archive-grpc-1.polkachu.com:23890` <br> `http://dydx-dao-archive-grpc-2.polkachu.com:23890` | 300 req/m  |
 | Bware Labs     | `https://dydx-mainnet-archive-grpc.public.blastapi.io:443`|            |
-| KingNodes      | `https://dydx-ops-archive-grpc.kingnodes.com:443`         |            |
+| KingNodes      | `https://dydx-ops-archive-grpc.kingnodes.com:443`         | 50 req/m   |
 
 ## Other Links
 
