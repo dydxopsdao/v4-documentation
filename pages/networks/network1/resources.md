@@ -36,8 +36,8 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Polkachu       | `580ec248de1f41d4e50abe132b7838348db55b80@176.9.144.40:23856` <br> `90b0ee8e73d8237b06356b244ff9854d1991a1f8@65.109.115.228:23856` <br> `874b5ab53d8f5edae6674ad394f20e2b297cf73f@199.254.199.182:23856` <br> `e3aa07f6f97fcccdf57b64aa5f4f11761df3852a@15.235.160.15:23856` <br> `a879fe2926c2b8f0d86e8e973210c30b8634abb4@15.235.204.159:23856` | `Germany` <br> `Finland` <br> `Japan` <br> `Singapore` <br> `Singapore` |
 | Bware Labs     |  |  |
 | Lavender.Five  |  |  |
-| NodeStake      |  |  |
-| AutoStake      |  |  |
+| NodeStake      | `4b0b87467129127d69ea6bb13ebae1153e8f801c@3.67.197.220:26656` |  |
+| AutoStake      | `ebc272824924ea1a27ea3183dd0b9ba713494f83@dydx-mainnet-peer.autostake.com:27366` | `EU,Poland` |
 
 ## Snapshot service
 | Team           | URI                                                       | Pruning | Index |
@@ -46,8 +46,8 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Polkachu       | `https://polkachu.com/tendermint_snapshots/dydx`          | Yes     | null  |
 | KingNodes      | `https://dydx-archive-snapshot.kingnodes.com/`            | No      | kv    |
 | Lavender.Five  | `https://services.lavenderfive.com/mainnet/dydx/snapshot` | Yes     |       |
-| NodeStake      | `https://nodestake.top/dydx`                              | Yes     |       |
-| AutoStake      | `https://autostake.com/networks/dydx/#services`           | Yes     |       |
+| NodeStake      | `https://nodestake.top/dydx`                              | Yes     | null  |
+| AutoStake      | `https://autostake.com/networks/dydx/#services`           | Yes     | null  |
 
 
 ## Full node endpoints
@@ -58,8 +58,8 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Bware Labs     | `https://dydx-mainnet-full-rpc.public.blastapi.io`        |            |
 | KingNodes      | `https://dydx-ops-rpc.kingnodes.com`                      | 250 req/m  |
 | Lavender.Five  | `https://dydx-rpc.lavenderfive.com`                       |            |
-| NodeStake      | `https://rpc.dydx.nodestake.top`                          |            |
-| AutoStake      | `https://dydx-mainnet-rpc.autostake.com`                  |            |
+| NodeStake      | `https://rpc.dydx.nodestake.top`                          | 350 req/m  |
+| AutoStake      | `https://dydx-mainnet-rpc.autostake.com`                  | 4 req/s    |
 | EcoStake       | `https://rpc-dydx.ecostake.com`                           |            |
 | CosmosSpaces   | `https://rpc-dydx.cosmos-spaces.cloud`                    |            |
 | PublicNode     | `https://dydx-rpc.publicnode.com`                         |            |
@@ -72,10 +72,10 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Bware Labs     | `https://dydx-mainnet-full-lcd.public.blastapi.io`        |            |
 | KingNodes      | `https://dydx-ops-rest.kingnodes.com`                     | 250 req/m  |
 | Lavender.Five  | `https://dydx-api.lavenderfive.com`                       |            |
-| AutoStake      | `https://dydx-mainnet-lcd.autostake.com`                  |            |
+| AutoStake      | `https://dydx-mainnet-lcd.autostake.com`                  | 4 req/s    |
 | EcoStake       | `https://rest-dydx.ecostake.com`                          |            |
 | CosmosSpaces   | `https://api-dydx.cosmos-spaces.cloud`                    |            |
-| NodeStake      | `https://api.dydx.nodestake.top`                          |            |
+| NodeStake      | `https://api.dydx.nodestake.top`                          | 350 req/m  |
 | PublicNode     | `https://dydx-rest.publicnode.com`                        |            |
 | Cros-Nest      | `https://rest-dydx.cros-nest.com`                         |            |
 | Enigma         | `https://dydx-lcd.enigma-validator.com`                   |            |
@@ -87,8 +87,8 @@ The above info can be found in this [`networks` repository](https://github.com/d
 | Bware Labs     | `https://dydx-mainnet-full-grpc.public.blastapi.io:443`   |            |
 | KingNodes      | `https://dydx-ops-grpc.kingnodes.com:443`                 | 250 req/m  |
 | Lavender.Five  | `https://dydx-grpc.lavenderfive.com:443`                  |            |
-| NodeStake      | `https://grpc.dydx.nodestake.top:443`                     |            |
-| AutoStake      | `https://dydx-mainnet-grpc.autostake.com:443`             |            |
+| NodeStake      | `https://grpc.dydx.nodestake.top:443`                     | 350 req/m  |
+| AutoStake      | `https://dydx-mainnet-grpc.autostake.com:443`             | 4 req/s    |
 | CosmosSpaces   | `http://grpc-dydx.cosmos-spaces.cloud:4990`               |            |
 | PublicNode     | `https://dydx-grpc.publicnode.com:443`                    |            |
 
