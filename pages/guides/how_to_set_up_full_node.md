@@ -42,7 +42,7 @@ to get the applicable Genesis state of the network.
  - https://nodestake.top/dydx
  - https://autostake.com/networks/dydx/#services
  - https://genznodes.dev/resources/snapshot/dydx
- - Also check [“Snapshot service → Snapshots](../networks/network1/resources.md#snapshot-service)
+ - Also check [Snapshot service](../networks/network1/resources.md#snapshot-service)
 
 ## Start the full node
 1. Start the full node. Note that you may need to change the `--p2p.seeds` parameter depending on the applicable v4 software blockchain network – you can find an example on [Resources page under “Seed nodes”](../networks/network1/resources.md#seed-nodes)
