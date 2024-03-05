@@ -1,13 +1,24 @@
-# dYdX Chain Mainnet documentation
+## dYdX Chain Software Documentation
 
-Welcome to the documentation page for dYdX Chain Mainnet, a robust blockchain built with the CosmosSDK. This documentation is diligently maintained by the dYdX Operations subDAO to provide a comprehensive resource for validators, developers, and the dYdX community at large.
+The most recent setup guides for how to use the dYdX Chain open-source software, as well as the netwrok parameters for `dydx-mainnet-1` are currently hosted by dYdX Trading Inc. at [docs.dydx.exchange](https://docs.dydx.exchange/).
 
-The dYdX Chain mainnet is operated by a decentralized network of independent validators, ensuring the security and transparency of the ecosystem. This documentation encompasses a wide range of topics including setup guides, netwrok parameters, and timelines among others, to facilitate a thorough understanding and effective interaction with dYdX Chain Mainnet.
+The dYdX Operations subDAO is committed to actively enhancing the documentation by contributing updates to the associated public repository located at https://github.com/dydxprotocol/v4-documentation.
 
-For further engagement and discussions, you are encouraged to visit the dYdX forum at https://dydx.forum
-To learn more about the dYdX Operations subDAO, or to get involved, please visit http://dydxopsdao.com
+## dYdX Chain: Open-Source Software
+
+The dYdX Chain open-source software, developed by dYdX Trading Inc., is available on GitHub at https://github.com/dydxprotocol/v4-chain.
+
+## Validator Slack Connect: Agreement and Onboarding
+
+If you are a validator keen on collaborating with other `dydx-mainnet-1` validators via Slack Connect, please first read the v4 software (“dYdX Chain”) [Terms of Use](https://dydx.exchange/v4-terms) and express your agreement by filling out [this form](https://forms.gle/ywz8wJfaK7j4jDRN7).
+
+## Engaging with dYdX
+
+For further engagement and discussions, you are encouraged to visit the dYdX forum at https://dydx.forum.
 
 For any inquiries or additional support, feel free to reach out through the channels provided on the dYdX forum, or join our community on [Discord](https://discord.com/invite/dydx). Your contribution and involvement are highly valued as we collectively work towards a decentralized and efficient dYdX ecosystem.
+
+To learn more about the dYdX Operations subDAO, or to get involved, please visit http://dydxopsdao.com.
 
 🦔 💜
 
