@@ -14,7 +14,7 @@ The dYdX Chain open-source software, developed by dYdX Trading Inc., is availabl
 
 ## Validator Slack Connect: Agreement and Onboarding
 
-If you are a validator keen on collaborating with other `dydx-mainnet-1` validators via Slack Connect, please first read the v4 software (“dYdX Chain”) [Terms of Use](https://dydx.exchange/v4-terms) and express your agreement by filling out [this form](https://forms.gle/ywz8wJfaK7j4jDRN7).
+If you are a validator keen on collaborating with other `dydx-mainnet-1` validators via Slack Connect, please first read the v4 software (“dYdX Chain”) [Terms of Use](https://dydx.trade/terms) and express your agreement by filling out [this form](https://forms.gle/Qe2VKR7CRoJBtdDu5).
 
 ## Engaging with dYdX
 
